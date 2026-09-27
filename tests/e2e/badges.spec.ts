@@ -8,6 +8,7 @@ test('summarizes current awards and reveals reasons with native disclosure', asy
   await page.goto('./');
   const section = page.getByRole('region', { name: 'Badge Summary' });
   await expect(section).toBeVisible();
+  await expect(section).toHaveCSS('background-color', 'rgb(5, 45, 55)');
   await expect(section.locator('details')).toHaveCount(6);
   await expect(section.locator('summary').first()).toContainText('Scoreboard Scorcher');
   await expect(section.locator('summary').first()).toContainText('Week 2');

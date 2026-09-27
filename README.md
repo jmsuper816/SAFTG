@@ -70,6 +70,25 @@ Badge names, earned week, and recipients are visible immediately; activate a gro
 badge description and each recipient's reason. The disclosure controls work with keyboard or
 pointer input and do not require JavaScript. Existing badges remain on individual team cards.
 
+## Football visual theme
+
+The supplied football artwork is bundled with the static site in portrait and landscape variants.
+The page selects the variant that matches the viewport orientation and keeps it fixed while content
+scrolls. A dark teal overlay and solid content surfaces preserve readability; cyan marks upward
+ranking movement, hot pink marks downward movement, and arrows retain the meaning without color.
+
+Use `npm run dev` for live theme work. For a production-equivalent review, run:
+
+```bash
+npm run build
+npm run preview -- --host 127.0.0.1
+```
+
+Review the current, historical, and 404 pages in portrait and landscape orientations. The source
+art lives in `src/assets/backgrounds/` and Astro emits fingerprinted, GitHub Pages base-aware URLs.
+See `specs/003-color-scheme-design/quickstart.md` for the complete contrast, reflow, orientation,
+fallback, and accessibility validation matrix.
+
 ## Corrections, recovery, and rollback
 
 - ESPN stat corrections require regenerating the affected edition on a branch and reviewing the

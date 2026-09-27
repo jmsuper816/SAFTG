@@ -15,6 +15,14 @@ const movement =
       : entry.movement < 0
         ? `▼ ${Math.abs(entry.movement)}`
         : '—';
+const movementState =
+  entry.movement === null
+    ? 'new'
+    : entry.movement > 0
+      ? 'up'
+      : entry.movement < 0
+        ? 'down'
+        : 'neutral';
 ---
 
 <article class="ranking-card" aria-labelledby={`team-${entry.teamId}`}>
@@ -24,7 +32,9 @@ const movement =
   <div class="team-copy">
     <div class="team-heading">
       <h2 id={`team-${entry.teamId}`}>{entry.displayName}</h2>
-      <span class="movement">{movement}</span>
+      <span class={`movement movement--${movementState}`} data-movement={movementState}>
+        {movement}
+      </span>
     </div>
     <p class="record">
       {entry.record.wins}–{entry.record.losses}
