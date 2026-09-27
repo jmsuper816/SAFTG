@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "leagueId": "1668863030",
+  "season": 2026,
+  "week": 1,
+  "commissioner": "ESPN Power Rankings",
+  "submittedAt": "2026-09-09T16:00:00.000Z",
+  "rankings": [
+    { "teamId": "10", "rank": 1, "explanation": "Ranked 1st in ESPN's Week 1 power rankings." },
+    { "teamId": "6", "rank": 2, "explanation": "Ranked 2nd in ESPN's Week 1 power rankings." },
+    { "teamId": "13", "rank": 3, "explanation": "Ranked 3rd in ESPN's Week 1 power rankings." },
+    { "teamId": "3", "rank": 4, "explanation": "Ranked 4th in ESPN's Week 1 power rankings." },
+    { "teamId": "5", "rank": 5, "explanation": "Ranked 5th in ESPN's Week 1 power rankings." },
+    { "teamId": "9", "rank": 6, "explanation": "Ranked 6th in ESPN's Week 1 power rankings." },
+    { "teamId": "1", "rank": 7, "explanation": "Ranked 7th in ESPN's Week 1 power rankings." },
+    { "teamId": "8", "rank": 8, "explanation": "Ranked 8th in ESPN's Week 1 power rankings." },
+    { "teamId": "4", "rank": 9, "explanation": "Ranked 9th in ESPN's Week 1 power rankings." },
+    { "teamId": "2", "rank": 10, "explanation": "Ranked 10th in ESPN's Week 1 power rankings." },
+    { "teamId": "11", "rank": 11, "explanation": "Ranked 11th in ESPN's Week 1 power rankings." },
+    { "teamId": "16", "rank": 12, "explanation": "Ranked 12th in ESPN's Week 1 power rankings." },
+    { "teamId": "12", "rank": 13, "explanation": "Ranked 13th in ESPN's Week 1 power rankings." },
+    { "teamId": "15", "rank": 14, "explanation": "Ranked 14th in ESPN's Week 1 power rankings." },
+    { "teamId": "7", "rank": 15, "explanation": "Ranked 15th in ESPN's Week 1 power rankings." },
+    { "teamId": "14", "rank": 16, "explanation": "Ranked 16th in ESPN's Week 1 power rankings." }
+  ]
+}

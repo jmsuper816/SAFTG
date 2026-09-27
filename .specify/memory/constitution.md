@@ -7,11 +7,13 @@ Sync Impact Report
 - Removed sections: none
 - Follow-up TODOs: none
 -->
+
 # SAFTG Constitution
 
 ## Core Principles
 
 ### I. Static Output Is the Product
+
 Every production build MUST produce a self-contained set of static HTML, CSS, JavaScript, and
 asset files. The deployed site MUST NOT require an application server, server-side runtime,
 database, or request-time rendering. Features that cannot operate within GitHub Pages' static
@@ -19,6 +21,7 @@ hosting model MUST be redesigned, precomputed during the build, or explicitly re
 keeps the deployed system compatible with its intended hosting platform.
 
 ### II. External Data Is Acquired at Build Time
+
 Data needed to render published content MUST be fetched from external APIs during the build and
 materialized into static output. API clients MUST define timeouts, validate responses, and handle
 rate limits and transient failures with bounded retries. A build MUST NOT silently publish missing,
@@ -27,6 +30,7 @@ tested. Browser-side API calls are permitted only when a feature inherently requ
 the endpoint supports safe, unauthenticated public access.
 
 ### III. Secrets Never Reach Published Artifacts
+
 API credentials and other secrets MUST be supplied through protected build-environment secrets and
 MUST NOT be committed, logged, embedded in generated files, or exposed to browser code. Build tools
 MUST treat all generated output as public. Any API requiring a secret at request time MUST be called
@@ -34,6 +38,7 @@ only during the trusted build process; if that is insufficient, the feature is i
 this architecture and requires a constitutional amendment or a different platform.
 
 ### IV. Builds Are Reproducible and Fail Clearly
+
 Dependencies MUST be pinned through a committed lockfile, and the documented build command MUST
 produce equivalent output from the same source and API inputs. Builds MUST fail with actionable
 errors when required inputs are unavailable or invalid. Generated timestamps, ordering, and other
@@ -41,6 +46,7 @@ nondeterministic values MUST be controlled unless they are intentional published
 CI builds MUST use the same build path so deployment failures can be reproduced before merge.
 
 ### V. GitHub Pages Compatibility Is Mandatory
+
 All URLs and assets MUST work under the repository's configured GitHub Pages base path and over
 HTTPS. Navigation MUST remain functional on direct page loads without server-side rewrite rules;
 client-side routing, if used, MUST include a tested Pages-compatible fallback. File-name casing MUST
@@ -49,6 +55,7 @@ and deployment MUST use GitHub Pages through an auditable GitHub Actions workflo
 documented Pages source branch.
 
 ### VI. Feature Branches and Squash Merges
+
 Every new feature MUST be developed on a dedicated feature branch created from the current main
 branch before implementation begins. Unrelated features MUST NOT share a branch. Work MUST be
 committed at logical checkpoints—such as after a coherent behavior, test, or refactor is

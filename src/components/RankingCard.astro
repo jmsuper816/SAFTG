@@ -1,0 +1,43 @@
+---
+import type { BadgeAward, RankingEntry } from '../lib/domain/types';
+import Badge from './Badge.astro';
+interface Props {
+  entry: RankingEntry;
+  awards?: BadgeAward[];
+  week: number;
+}
+const { entry, awards = [], week } = Astro.props;
+const movement =
+  entry.movement === null
+    ? 'New'
+    : entry.movement > 0
+      ? `▲ ${entry.movement}`
+      : entry.movement < 0
+        ? `▼ ${Math.abs(entry.movement)}`
+        : '—';
+---
+
+<article class="ranking-card" aria-labelledby={`team-${entry.teamId}`}>
+  <div class="rank" aria-label={`Rank ${entry.rank}`}>
+    #{entry.rank}
+  </div>
+  <div class="team-copy">
+    <div class="team-heading">
+      <h2 id={`team-${entry.teamId}`}>{entry.displayName}</h2>
+      <span class="movement">{movement}</span>
+    </div>
+    <p class="record">
+      {entry.record.wins}–{entry.record.losses}
+      {entry.record.ties ? `–${entry.record.ties}` : ''} · Week {week}:{' '}
+      {entry.weeklyScore.toFixed(2)} pts
+    </p>
+    <p>{entry.explanation}</p>
+    {awards.length > 0 && (
+      <div class="badges" aria-label={`${entry.displayName} badges`}>
+        {awards.map((award) => (
+          <Badge award={award} week={week} />
+        ))}
+      </div>
+    )}
+  </div>
+</article>

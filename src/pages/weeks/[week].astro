@@ -1,0 +1,40 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RankingCard from '../../components/RankingCard.astro';
+import WeekNavigation from '../../components/WeekNavigation.astro';
+import { loadEditions } from '../../lib/editions/load';
+export const getStaticPaths = (async () =>
+  (await loadEditions()).map((edition) => ({
+    params: { week: String(edition.week.number) },
+    props: { edition },
+  }))) satisfies GetStaticPaths;
+const { edition } = Astro.props;
+const editions = await loadEditions();
+---
+
+<BaseLayout title={`Week ${edition.week.number} Power Rankings`}>
+  <header class="hero">
+    <p class="eyebrow">Week {edition.week.number} · Historical</p>
+    <h1>{edition.league.name} Power Rankings</h1>
+    <p>
+      Ranked by {edition.rankingSource.commissioner} · Published{' '}
+      <time datetime={edition.publishedAt}>
+        {new Date(edition.publishedAt).toLocaleDateString('en-US', {
+          dateStyle: 'long',
+          timeZone: edition.league.timezone,
+        })}
+      </time>
+    </p>
+  </header>
+  <WeekNavigation editions={editions} current={edition} />
+  <section class="rankings" aria-label={`Week ${edition.week.number} power rankings`}>
+    {edition.entries.map((entry) => (
+      <RankingCard
+        entry={entry}
+        awards={edition.badges.filter((award) => award.teamId === entry.teamId)}
+        week={edition.week.number}
+      />
+    ))}
+  </section>
+</BaseLayout>

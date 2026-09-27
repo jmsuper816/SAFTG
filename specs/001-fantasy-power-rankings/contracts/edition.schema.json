@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://saftg.example/contracts/edition.schema.json",
+  "title": "Published Weekly Edition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "editionId",
+    "league",
+    "week",
+    "publishedAt",
+    "rankingSource",
+    "entries",
+    "badges",
+    "previousEditionId"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "editionId": { "type": "string", "pattern": "^.+-[0-9]{4}-week-[0-9]{2}$" },
+    "league": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["leagueId", "name", "season", "timezone"],
+      "properties": {
+        "leagueId": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "season": { "type": "integer", "minimum": 2020, "maximum": 2100 },
+        "timezone": { "type": "string", "minLength": 1 }
+      }
+    },
+    "week": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["number", "startsAt", "endsAt", "sourceStatus"],
+      "properties": {
+        "number": { "type": "integer", "minimum": 1, "maximum": 25 },
+        "startsAt": { "type": "string", "format": "date-time" },
+        "endsAt": { "type": "string", "format": "date-time" },
+        "sourceStatus": { "const": "final" }
+      }
+    },
+    "publishedAt": { "type": "string", "format": "date-time" },
+    "rankingSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "commissioner", "submissionPath"],
+      "properties": {
+        "type": { "const": "commissioner" },
+        "commissioner": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "submissionPath": { "type": "string", "minLength": 1 }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "teamId",
+          "displayName",
+          "rank",
+          "previousRank",
+          "movement",
+          "record",
+          "weeklyScore",
+          "winningStreak",
+          "explanation",
+          "badgeIds"
+        ],
+        "properties": {
+          "teamId": { "type": "string", "minLength": 1 },
+          "displayName": { "type": "string", "minLength": 1, "maxLength": 60 },
+          "rank": { "type": "integer", "minimum": 1, "maximum": 20 },
+          "previousRank": { "type": ["integer", "null"], "minimum": 1, "maximum": 20 },
+          "movement": { "type": ["integer", "null"], "minimum": -19, "maximum": 19 },
+          "record": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["wins", "losses", "ties", "pointsFor", "pointsAgainst"],
+            "properties": {
+              "wins": { "type": "integer", "minimum": 0 },
+              "losses": { "type": "integer", "minimum": 0 },
+              "ties": { "type": "integer", "minimum": 0 },
+              "pointsFor": { "type": "number" },
+              "pointsAgainst": { "type": "number" }
+            }
+          },
+          "weeklyScore": { "type": "number" },
+          "winningStreak": { "type": "integer", "minimum": 0, "maximum": 25 },
+          "explanation": { "type": "string", "minLength": 1, "maxLength": 500 },
+          "badgeIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+          }
+        }
+      }
+    },
+    "badges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["badgeId", "teamId", "reason", "metric"],
+        "properties": {
+          "badgeId": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "teamId": { "type": "string", "minLength": 1 },
+          "reason": { "type": "string", "minLength": 1, "maxLength": 300 },
+          "metric": { "type": ["number", "null"] }
+        }
+      }
+    },
+    "previousEditionId": { "type": ["string", "null"] }
+  }
+}

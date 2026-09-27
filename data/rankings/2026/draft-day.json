@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "leagueId": "1668863030",
+  "season": 2026,
+  "label": "Draft Day Power Rankings",
+  "rankings": [
+    { "teamId": "10", "displayName": "Pitts Out For the Boys", "rank": 1 },
+    { "teamId": "1", "displayName": "The Waffles Special", "rank": 2 },
+    { "teamId": "3", "displayName": "Slayday Barbie", "rank": 3 },
+    { "teamId": "13", "displayName": "Milk These TDs", "rank": 4 },
+    { "teamId": "11", "displayName": "Sammy's Ball Handlers", "rank": 5 },
+    { "teamId": "2", "displayName": "The Brotherly Shovers", "rank": 6 },
+    { "teamId": "5", "displayName": "Unnecessary Roughness", "rank": 7 },
+    { "teamId": "6", "displayName": "Shannon’s Serving Punt", "rank": 8 },
+    { "teamId": "16", "displayName": "back that pass up", "rank": 9 },
+    { "teamId": "15", "displayName": "glizzie gambler", "rank": 10 },
+    { "teamId": "7", "displayName": "sacks in the city", "rank": 11 },
+    { "teamId": "9", "displayName": "I Love Kevin’s Tight End", "rank": 12 },
+    { "teamId": "4", "displayName": "McConkey-Tonk Badonkadonk", "rank": 13 },
+    { "teamId": "12", "displayName": "Hail Marys", "rank": 14 },
+    { "teamId": "8", "displayName": "Whisk Takers", "rank": 15 },
+    { "teamId": "14", "displayName": "Girls Just Wanna Have TDs", "rank": 16 }
+  ]
+}

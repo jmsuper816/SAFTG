@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-02",
+  "league": {
+    "leagueId": "1668863030",
+    "name": "Sundays Are For The Girls",
+    "season": 2026,
+    "timezone": "America/New_York"
+  },
+  "week": {
+    "number": 2,
+    "startsAt": "2026-01-08T00:00:00.000Z",
+    "endsAt": "2026-09-27T00:35:05.708Z",
+    "sourceStatus": "final"
+  },
+  "publishedAt": "2026-09-15T16:00:00.000Z",
+  "rankingSource": {
+    "type": "commissioner",
+    "commissioner": "ESPN Power Rankings",
+    "submissionPath": "data/rankings/2026/week-02.json"
+  },
+  "entries": [
+    {
+      "teamId": "6",
+      "displayName": "Shannon’s Serving Punt",
+      "rank": 1,
+      "previousRank": 8,
+      "movement": 7,
+      "record": {
+        "wins": 2,
+        "losses": 0,
+        "ties": 0,
+        "pointsFor": 259.15999999999997,
+        "pointsAgainst": 203.01999999999998
+      },
+      "weeklyScore": 114.66,
+      "winningStreak": 0,
+      "explanation": "Ranked 1st in ESPN's Week 2 power rankings.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "10",
+      "displayName": "Pitts Out For the Boys",
+      "rank": 2,
+      "previousRank": 1,
+      "movement": -1,
+      "record": {
+        "wins": 2,
+        "losses": 0,
+        "ties": 0,
+        "pointsFor": 222.38,
+        "pointsAgainst": 168.76
+      },
+      "weeklyScore": 100.88,
+      "winningStreak": 0,
+      "explanation": "Ranked 2nd in ESPN's Week 2 power rankings.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "3",
+      "displayName": "Slayday Barbie",
+      "rank": 3,
+      "previousRank": 3,
+      "movement": 0,
+      "record": {
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 243.38,
+        "pointsAgainst": 172.78
+      },
+      "weeklyScore": 73.92,
+      "winningStreak": 0,
+      "explanation": "Ranked 3rd in ESPN's Week 2 power rankings.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "9",
+      "displayName": "I Love Kevin’s Tight End",
+      "rank": 4,
+      "previousRank": 12,
+      "movement": 8,
+      "record": {
+        "wins": 2,
+        "losses": 0,
+        "ties": 0,
+        "pointsFor": 195.38,
+        "pointsAgainst": 182
+      },
+      "weeklyScore": 91.96,
+      "winningStreak": 0,
+      "explanation": "Ranked 4th in ESPN's Week 2 power rankings.",
+      "badgeIds": [
+        "photo-finish"
+      ]
+    },
+    {
+      "teamId": "5",
+      "displayName": "Unnecessary Roughness",
+      "rank": 5,
+      "previousRank": 7,
+      "movement": 2,
+      "record": {
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 217.06,
+        "pointsAgainst": 250.72
+      },
+      "weeklyScore": 92.1,
+      "winningStreak": 0,
+      "explanation": "Ranked 5th in ESPN's Week 2 power rankings.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "1",
+      "displayName": "The Waffles Special",
+      "rank": 6,
+      "previousRank": 2,
+      "movement": -4,
+      "record": {
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 261.78,
+        "pointsAgainst": 242.48
+      },
+      "weeklyScore": 138.48,
+      "winningStreak": 0,
+      "explanation": "Ranked 6th in ESPN's Week 2 power rankings.",
+      "badgeIds": [
+        "scoreboard-scorcher"
+      ]
+    },
+    {
+      "teamId": "8",
+      "displayName": "Whisk Takers",
+      "rank": 7,
+      "previousRank": 15,
+      "movement": 8,
+      "record": {
+        "wins": 2,
+        "losses": 0,
+        "ties": 0,
+        "pointsFor": 249.78,
+        "pointsAgainst": 170.76
+      },
+      "weeklyScore": 127.42,
+      "winningStreak": 0,
+      "explanation": "Ranked 7th in ESPN's Week 2 power rankings.",
+      "badgeIds": [
+        "giant-slayer"
+      ]
+    },
+    {
+      "teamId": "13",
+      "displayName": "Milk These TDs",
+      "rank": 8,
+      "previousRank": 4,
+      "movement": -4,
+      "record": {
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 235.6,
+        "pointsAgainst": 183.82
+      },
+      "weeklyScore": 91.1,
+      "winningStreak": 0,
+      "explanation": "Ranked 8th in ESPN's Week 2 power rankings.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "16",
+      "displayName": "back that pass up",
+      "rank": 9,
+      "previousRank": 9,
+      "movement": 0,
+      "record": {
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 194.14,
+        "pointsAgainst": 221.07999999999998
+      },
+      "weeklyScore": 115.48,
+      "winningStreak": 0,
+      "explanation": "Ranked 9th in ESPN's Week 2 power rankings.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "12",
+      "displayName": "Hail Marys",
+      "rank": 10,
+      "previousRank": 14,
+      "movement": 4,
+      "record": {
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 189.82,
+        "pointsAgainst": 194.48000000000002
+      },
+      "weeklyScore": 94.98,
+      "winningStreak": 0,
+      "explanation": "Ranked 10th in ESPN's Week 2 power rankings.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "7",
+      "displayName": "sacks in the city",
+      "rank": 11,
+      "previousRank": 11,
+      "movement": 0,
+      "record": {
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 209.36,
+        "pointsAgainst": 264.64
+      },
+      "weeklyScore": 137.46,
+      "winningStreak": 0,
+      "explanation": "Ranked 11th in ESPN's Week 2 power rankings.",
+      "badgeIds": [
+        "steamroller"
+      ]
+    },
+    {
+      "teamId": "4",
+      "displayName": "McConkey-Tonk Badonkadonk",
+      "rank": 12,
+      "previousRank": 13,
+      "movement": 1,
+      "record": {
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 207.01999999999998,
+        "pointsAgainst": 202.22
+      },
+      "weeklyScore": 72.98,
+      "winningStreak": 0,
+      "explanation": "Ranked 12th in ESPN's Week 2 power rankings.",
+      "badgeIds": [
+        "basement-dweller"
+      ]
+    },
+    {
+      "teamId": "11",
+      "displayName": "Sammy's Ball Handlers",
+      "rank": 13,
+      "previousRank": 5,
+      "movement": -8,
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0,
+        "pointsFor": 229.44,
+        "pointsAgainst": 282.98
+      },
+      "weeklyScore": 117.52,
+      "winningStreak": 0,
+      "explanation": "Ranked 13th in ESPN's Week 2 power rankings.",
+      "badgeIds": [
+        "hard-luck-hero"
+      ]
+    },
+    {
+      "teamId": "2",
+      "displayName": "The Brotherly Shovers",
+      "rank": 14,
+      "previousRank": 6,
+      "movement": -8,
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0,
+        "pointsFor": 205.95999999999998,
+        "pointsAgainst": 249.51999999999998
+      },
+      "weeklyScore": 98.72,
+      "winningStreak": 0,
+      "explanation": "Ranked 14th in ESPN's Week 2 power rankings.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "15",
+      "displayName": "glizzie gambler",
+      "rank": 15,
+      "previousRank": 10,
+      "movement": -5,
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0,
+        "pointsFor": 195.64,
+        "pointsAgainst": 240.88
+      },
+      "weeklyScore": 95.18,
+      "winningStreak": 0,
+      "explanation": "Ranked 15th in ESPN's Week 2 power rankings.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "14",
+      "displayName": "Girls Just Wanna Have TDs",
+      "rank": 16,
+      "previousRank": 16,
+      "movement": 0,
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0,
+        "pointsFor": 150.7,
+        "pointsAgainst": 236.45999999999998
+      },
+      "weeklyScore": 81.54,
+      "winningStreak": 0,
+      "explanation": "Ranked 16th in ESPN's Week 2 power rankings.",
+      "badgeIds": []
+    }
+  ],
+  "badges": [
+    {
+      "badgeId": "scoreboard-scorcher",
+      "teamId": "1",
+      "reason": "Led the league with 138.48 points.",
+      "metric": 138.48
+    },
+    {
+      "badgeId": "basement-dweller",
+      "teamId": "4",
+      "reason": "Posted the week's low score of 72.98.",
+      "metric": 72.98
+    },
+    {
+      "badgeId": "steamroller",
+      "teamId": "7",
+      "reason": "Won by 42.28 points.",
+      "metric": 42.28
+    },
+    {
+      "badgeId": "photo-finish",
+      "teamId": "9",
+      "reason": "Survived a 10.42-point finish.",
+      "metric": 10.419999999999987
+    },
+    {
+      "badgeId": "giant-slayer",
+      "teamId": "8",
+      "reason": "Beat a team ranked 8 places higher.",
+      "metric": 8
+    },
+    {
+      "badgeId": "hard-luck-hero",
+      "teamId": "11",
+      "reason": "Scored 117.52 points and still lost.",
+      "metric": 117.52
+    }
+  ],
+  "previousEditionId": "1668863030-2026-week-01"
+}

@@ -1,0 +1,26 @@
+---
+import type { BadgeAward } from '../lib/domain/types';
+import { badgeById } from '../lib/badges/catalog';
+interface Props {
+  award: BadgeAward;
+  week: number;
+}
+const { award, week } = Astro.props;
+const badge = badgeById.get(award.badgeId);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+{badge && (
+  <figure
+    class="badge"
+    tabindex="0"
+    aria-label={`${badge.name}, earned week ${week}. ${award.reason}`}
+  >
+    <img src={`${base}/${badge.assetPath}`} alt="" width="44" height="44" loading="lazy" />
+    <figcaption>
+      <strong>{badge.name}</strong>
+      <span>{badge.description}</span>
+      <small>{award.reason}</small>
+    </figcaption>
+  </figure>
+)}

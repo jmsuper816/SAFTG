@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<BaseLayout title="Ranking not found">
+  <section class="empty">
+    <p class="eyebrow">Flag on the play</p>
+    <h1>That ranking week isn’t available.</h1>
+    <p>It may not be final yet, or the URL may be wrong.</p>
+    <a class="button" href={`${base}/`}>
+      Return to current rankings
+    </a>
+  </section>
+</BaseLayout>

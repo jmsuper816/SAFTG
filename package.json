@@ -1,0 +1,45 @@
+{
+  "name": "saftg-power-rankings",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "preview": "node --experimental-strip-types scripts/serve-preview.ts",
+    "format": "prettier --write \"{src,scripts,tests}/**/*.{ts,astro,json}\" \"*.{ts,js,mjs,json}\"",
+    "format:check": "prettier --check \"{src,scripts,tests}/**/*.{ts,astro,json}\" \"*.{ts,js,mjs,json}\"",
+    "lint": "eslint .",
+    "typecheck": "ASTRO_TELEMETRY_DISABLED=1 astro check",
+    "test": "vitest run",
+    "test:contract": "vitest run tests/contract",
+    "test:e2e": "playwright test",
+    "ranking:validate": "node --experimental-strip-types scripts/generate-edition.ts --validate-ranking",
+    "edition:generate": "node --experimental-strip-types scripts/generate-edition.ts",
+    "edition:verify": "node --experimental-strip-types scripts/generate-edition.ts --verify",
+    "edition:expected": "node --experimental-strip-types scripts/check-expected-edition.ts",
+    "check:links": "node --experimental-strip-types scripts/check-links.ts",
+    "scan:secrets": "node --experimental-strip-types scripts/scan-artifact.ts"
+  },
+  "dependencies": {
+    "astro": "7.3.4",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "latest",
+    "@axe-core/playwright": "4.13.0",
+    "@eslint/js": "latest",
+    "@playwright/test": "latest",
+    "@types/node": "latest",
+    "eslint": "latest",
+    "globals": "latest",
+    "prettier": "latest",
+    "prettier-plugin-astro": "latest",
+    "typescript": "6.0.3",
+    "typescript-eslint": "latest",
+    "vitest": "5.0.2"
+  }
+}

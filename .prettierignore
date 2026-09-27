@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+coverage/
+.astro/
+package-lock.json
+playwright-report/
+test-results/
+.agents/
+.specify/
+specs/

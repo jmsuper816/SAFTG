@@ -1,0 +1,69 @@
+import type { BadgeDefinition } from '../domain/types.ts';
+
+export const badgeCatalog: BadgeDefinition[] = [
+  {
+    badgeId: 'scoreboard-scorcher',
+    name: 'Scoreboard Scorcher',
+    description: 'Highest score of the week.',
+    scope: 'weekly',
+    exclusive: false,
+    tieRule: 'all',
+    assetPath: 'assets/badges/scoreboard-scorcher.svg',
+  },
+  {
+    badgeId: 'basement-dweller',
+    name: 'Basement Dweller',
+    description: 'Lowest score of the week.',
+    scope: 'weekly',
+    exclusive: false,
+    tieRule: 'all',
+    assetPath: 'assets/badges/basement-dweller.svg',
+  },
+  {
+    badgeId: 'steamroller',
+    name: 'Steamroller',
+    description: 'Largest victory margin.',
+    scope: 'weekly',
+    exclusive: false,
+    tieRule: 'all',
+    assetPath: 'assets/badges/steamroller.svg',
+  },
+  {
+    badgeId: 'photo-finish',
+    name: 'Photo Finish',
+    description: 'Closest victory margin.',
+    scope: 'weekly',
+    exclusive: false,
+    tieRule: 'all',
+    assetPath: 'assets/badges/photo-finish.svg',
+  },
+  {
+    badgeId: 'giant-slayer',
+    name: 'Giant Slayer',
+    description: 'Biggest upset by prior ranking.',
+    scope: 'weekly',
+    exclusive: false,
+    tieRule: 'all',
+    assetPath: 'assets/badges/giant-slayer.svg',
+  },
+  {
+    badgeId: 'hot-streak',
+    name: 'Hot Streak',
+    description: 'Longest active winning streak.',
+    scope: 'streak',
+    exclusive: false,
+    tieRule: 'all',
+    assetPath: 'assets/badges/hot-streak.svg',
+  },
+  {
+    badgeId: 'hard-luck-hero',
+    name: 'Hard-Luck Hero',
+    description: 'Highest score among losing teams.',
+    scope: 'weekly',
+    exclusive: false,
+    tieRule: 'all',
+    assetPath: 'assets/badges/hard-luck-hero.svg',
+  },
+];
+
+export const badgeById = new Map(badgeCatalog.map((badge) => [badge.badgeId, badge]));

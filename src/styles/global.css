@@ -1,0 +1,220 @@
+:root {
+  color-scheme: dark;
+  --ink: #f7f3e8;
+  --muted: #b9b3a6;
+  --panel: #171c2b;
+  --gold: #ffcb47;
+  --mint: #6ee7b7;
+  --danger: #fb7185;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  background: #090c16;
+  color: var(--ink);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, #23294a 0, transparent 36rem), #090c16;
+}
+a {
+  color: var(--gold);
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 10;
+  background: #fff;
+  color: #000;
+  padding: 0.7rem;
+}
+.site-header,
+main,
+footer {
+  width: min(72rem, calc(100% - 2rem));
+  margin-inline: auto;
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #30364b;
+  color: var(--muted);
+}
+.brand {
+  color: var(--ink);
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+main {
+  padding-block: 3rem;
+}
+.hero {
+  max-width: 50rem;
+  margin-bottom: 2rem;
+}
+.hero h1,
+.empty h1 {
+  margin: 0.25rem 0;
+  font-size: clamp(2.2rem, 7vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+.eyebrow {
+  color: var(--mint);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 800;
+}
+.week-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #111625;
+  border-radius: 1rem;
+}
+.all-weeks {
+  margin-left: auto;
+  position: relative;
+}
+.all-weeks summary {
+  color: var(--gold);
+  cursor: pointer;
+}
+.all-weeks ul {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  min-width: 8rem;
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 1.8rem;
+  background: #090c16;
+  border: 1px solid #505875;
+  border-radius: 0.4rem;
+}
+.all-weeks a[aria-current='page'] {
+  color: var(--ink);
+  font-weight: 800;
+}
+.rankings {
+  display: grid;
+  gap: 0.85rem;
+}
+.ranking-card {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: linear-gradient(145deg, #1c2235, var(--panel));
+  border: 1px solid #30364b;
+  border-radius: 1.1rem;
+  box-shadow: 0 1rem 2.5rem #0004;
+}
+.rank {
+  font-size: 2.25rem;
+  font-weight: 950;
+  color: var(--gold);
+}
+.team-heading {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.team-heading h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+.movement {
+  color: var(--mint);
+  font-weight: 800;
+}
+.record {
+  color: var(--muted);
+  margin: 0.35rem 0;
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.badge {
+  display: flex;
+  gap: 0.55rem;
+  align-items: center;
+  margin: 0;
+  padding: 0.55rem 0.7rem;
+  max-width: 21rem;
+  background: #0b1020;
+  border: 1px solid #454e6a;
+  border-radius: 0.8rem;
+}
+.badge:focus {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+.badge figcaption {
+  display: grid;
+}
+.badge span,
+.badge small {
+  color: var(--muted);
+}
+.empty {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.button {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  border-radius: 0.7rem;
+  background: var(--gold);
+  color: #161109;
+  font-weight: 900;
+  text-decoration: none;
+}
+footer {
+  padding: 2rem 0 3rem;
+  color: var(--muted);
+  border-top: 1px solid #30364b;
+}
+@media (max-width: 40rem) {
+  .site-header span {
+    display: none;
+  }
+  .ranking-card {
+    grid-template-columns: 3.2rem 1fr;
+    padding: 1rem;
+  }
+  .rank {
+    font-size: 1.7rem;
+  }
+  .all-weeks {
+    width: 100%;
+    margin: 0;
+  }
+  .all-weeks ul {
+    position: static;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ranking-card {
+    transition:
+      transform 0.15s ease,
+      border-color 0.15s ease;
+  }
+  .ranking-card:hover {
+    transform: translateY(-2px);
+    border-color: #59627f;
+  }
+}

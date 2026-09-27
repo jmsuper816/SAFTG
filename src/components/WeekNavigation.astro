@@ -1,0 +1,41 @@
+---
+import type { WeeklyEdition } from '../lib/domain/types';
+interface Props {
+  editions: WeeklyEdition[];
+  current: WeeklyEdition;
+}
+const { editions, current } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const index = editions.findIndex((edition) => edition.editionId === current.editionId);
+const previous = index > 0 ? editions[index - 1] : null;
+const next = index >= 0 && index < editions.length - 1 ? editions[index + 1] : null;
+---
+
+<nav class="week-nav" aria-label="Ranking weeks">
+  {previous ? (
+    <a href={`${base}/weeks/${previous.week.number}/`}>← Week {previous.week.number}</a>
+  ) : (
+    <span>First edition</span>
+  )}
+  <a href={`${base}/`}>Current</a>
+  <details class="all-weeks">
+    <summary>All weeks</summary>
+    <ul>
+      {editions.map((edition) => (
+        <li>
+          <a
+            href={`${base}/weeks/${edition.week.number}/`}
+            aria-current={edition.editionId === current.editionId ? 'page' : undefined}
+          >
+            Week {edition.week.number}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </details>
+  {next ? (
+    <a href={`${base}/weeks/${next.week.number}/`}>Week {next.week.number} →</a>
+  ) : (
+    <span>Latest edition</span>
+  )}
+</nav>

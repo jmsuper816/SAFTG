@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import RankingCard from '../components/RankingCard.astro';
+import WeekNavigation from '../components/WeekNavigation.astro';
+import { latestEdition, loadEditions } from '../lib/editions/load';
+const editions = await loadEditions();
+const edition = latestEdition(editions);
+---
+
+<BaseLayout title="Tuesday Power Rankings">
+  {edition ? (
+    <>
+      <header class="hero">
+        <p class="eyebrow">Week {edition.week.number} · Current</p>
+        <h1>{edition.league.name} Power Rankings</h1>
+        <p>
+          Ranked by {edition.rankingSource.commissioner} · Published{' '}
+          <time datetime={edition.publishedAt}>
+            {new Date(edition.publishedAt).toLocaleDateString('en-US', {
+              dateStyle: 'long',
+              timeZone: edition.league.timezone,
+            })}
+          </time>
+        </p>
+      </header>
+      <WeekNavigation editions={editions} current={edition} />
+      <section class="rankings" aria-label="Current power rankings">
+        {edition.entries.map((entry) => (
+          <RankingCard
+            entry={entry}
+            awards={edition.badges.filter((award) => award.teamId === entry.teamId)}
+            week={edition.week.number}
+          />
+        ))}
+      </section>
+    </>
+  ) : (
+    <section class="empty">
+      <h1>Rankings are warming up</h1>
+      <p>The commissioner’s first complete Tuesday edition has not been published yet.</p>
+    </section>
+  )}
+</BaseLayout>

@@ -1,0 +1,8 @@
+{
+  "id": "league-1",
+  "seasonId": 2026,
+  "settings": { "name": "Tuesday League" },
+  "status": { "currentMatchupPeriod": 2 },
+  "teams": "schema changed unexpectedly",
+  "schedule": []
+}
