@@ -98,31 +98,9 @@ a {
   color: var(--ink);
 }
 
-.site-header,
-main,
-footer {
+main {
   width: min(72rem, calc(100% - 2rem));
   margin-inline: auto;
-}
-
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
-  padding: 1rem 1.2rem;
-  border: 1px solid var(--border);
-  border-radius: 1rem;
-  background: var(--surface);
-  color: var(--ink-muted);
-  box-shadow: 0 0.8rem 2rem rgb(0 20 27 / 34%);
-}
-
-.brand {
-  color: var(--ink);
-  font-weight: 900;
-  text-decoration: none;
-  letter-spacing: 0.03em;
 }
 
 main {
@@ -145,6 +123,16 @@ main {
   font-size: clamp(2.2rem, 7vw, 5rem);
   line-height: 0.95;
   letter-spacing: -0.05em;
+}
+
+.hero h1:focus {
+  outline: 3px solid var(--focus-inner);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--focus-outer);
+}
+
+#roundup-title {
+  scroll-margin-top: 1rem;
 }
 
 .eyebrow {
@@ -313,6 +301,11 @@ main {
   gap: 0.85rem;
 }
 
+.rankings-heading {
+  margin: 1rem 0 0.15rem;
+  font-size: 1rem;
+}
+
 .ranking-card {
   display: grid;
   grid-template-columns: 4.5rem minmax(0, 1fr);
@@ -419,24 +412,14 @@ main {
   border-color: var(--ink);
 }
 
-footer {
-  margin-bottom: 1rem;
-  padding: 1.25rem;
-  color: var(--ink-muted);
-  border: 1px solid var(--border);
-  border-radius: 1rem;
-  background: var(--surface);
+.back-to-top {
+  justify-self: start;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 40rem) {
-  .site-header,
-  main,
-  footer {
+  main {
     width: min(100% - 1rem, 72rem);
-  }
-
-  .site-header span {
-    display: none;
   }
 
   .ranking-card {

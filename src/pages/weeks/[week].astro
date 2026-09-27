@@ -14,12 +14,13 @@ const { edition } = Astro.props;
 const editions = await loadEditions();
 ---
 
-<BaseLayout title={`Week ${edition.week.number} Power Rankings`}>
+<BaseLayout title="Sundays Are For The Girls Weekly Roundup">
   <header class="hero">
     <p class="eyebrow">Week {edition.week.number} · Historical</p>
-    <h1>{edition.league.name} Power Rankings</h1>
+    <h1 id="roundup-title" tabindex="-1">
+      Sundays Are For The Girls Weekly Roundup
+    </h1>
     <p>
-      Ranked by {edition.rankingSource.commissioner} · Published{' '}
       <time datetime={edition.publishedAt}>
         {new Date(edition.publishedAt).toLocaleDateString('en-US', {
           dateStyle: 'long',
@@ -31,6 +32,7 @@ const editions = await loadEditions();
   <WeekNavigation editions={editions} current={edition} />
   <BadgeSummary edition={edition} />
   <section class="rankings" aria-label={`Week ${edition.week.number} power rankings`}>
+    <h2 class="eyebrow rankings-heading">POWER RANKING</h2>
     {edition.entries.map((entry) => (
       <RankingCard
         entry={entry}
@@ -38,5 +40,8 @@ const editions = await loadEditions();
         week={edition.week.number}
       />
     ))}
+    <a class="button back-to-top" href="#roundup-title">
+      Back to top
+    </a>
   </section>
 </BaseLayout>
