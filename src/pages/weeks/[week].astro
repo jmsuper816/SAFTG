@@ -3,6 +3,7 @@ import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import RankingCard from '../../components/RankingCard.astro';
 import WeekNavigation from '../../components/WeekNavigation.astro';
+import BadgeSummary from '../../components/BadgeSummary.astro';
 import { loadEditions } from '../../lib/editions/load';
 export const getStaticPaths = (async () =>
   (await loadEditions()).map((edition) => ({
@@ -28,6 +29,7 @@ const editions = await loadEditions();
     </p>
   </header>
   <WeekNavigation editions={editions} current={edition} />
+  <BadgeSummary edition={edition} />
   <section class="rankings" aria-label={`Week ${edition.week.number} power rankings`}>
     {edition.entries.map((entry) => (
       <RankingCard

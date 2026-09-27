@@ -8,9 +8,11 @@ test('shows the complete current commissioner ranking without runtime data calls
     if (request.url().includes('espn.com')) requests.push(request.url());
   });
   await page.goto('./');
-  await expect(page.getByRole('heading', { name: /Tuesday League Power Rankings/ })).toBeVisible();
-  await expect(page.getByText('Ranked by Commissioner Jess')).toBeVisible();
-  await expect(page.locator('.ranking-card')).toHaveCount(2);
-  await expect(page.getByText('Moonlight Owls')).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: /Sundays Are For The Girls Power Rankings/ }),
+  ).toBeVisible();
+  await expect(page.getByText('Ranked by ESPN Power Rankings')).toBeVisible();
+  await expect(page.locator('.ranking-card')).toHaveCount(16);
+  await expect(page.getByText('Shannon’s Serving Punt').first()).toBeVisible();
   expect(requests).toEqual([]);
 });

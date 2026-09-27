@@ -1,0 +1,56 @@
+---
+import type { WeeklyEdition } from '../lib/domain/types';
+import { EMPTY_BADGE_SUMMARY_MESSAGE, createBadgeSummary } from '../lib/badges/summary';
+
+interface Props {
+  edition: WeeklyEdition;
+}
+
+const { edition } = Astro.props;
+const summary = createBadgeSummary(edition);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<section class="badge-summary" aria-labelledby="badge-summary-heading">
+  <div class="badge-summary-heading">
+    <p class="eyebrow">Weekly honors</p>
+    <h2 id="badge-summary-heading">Badge Summary</h2>
+  </div>
+  {summary.groups.length === 0 ? (
+    <p class="badge-summary-empty">{EMPTY_BADGE_SUMMARY_MESSAGE}</p>
+  ) : (
+    <div class="badge-summary-grid">
+      {summary.groups.map((group) => (
+        <details class="badge-summary-group">
+          <summary>
+            <img
+              src={`${base}/${group.badge.assetPath}`}
+              alt=""
+              width="52"
+              height="52"
+              loading="lazy"
+            />
+            <span class="badge-summary-title">
+              <strong>{group.badge.name}</strong>
+              <small>Week {group.week}</small>
+              <span class="badge-summary-recipients">
+                {group.recipients.map((recipient) => recipient.displayName).join(' · ')}
+              </span>
+            </span>
+          </summary>
+          <div class="badge-summary-details">
+            <p class="badge-summary-description">{group.badge.description}</p>
+            <ul>
+              {group.recipients.map((recipient) => (
+                <li>
+                  <strong>{recipient.displayName}</strong>
+                  <span>{recipient.reason}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </details>
+      ))}
+    </div>
+  )}
+</section>

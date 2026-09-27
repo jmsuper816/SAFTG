@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { badgeCatalog } from '../badges/catalog.ts';
 
 const isoDate = z.iso.datetime({ offset: true });
 const finite = z.number().finite();
@@ -94,6 +95,7 @@ export const draftRankingSchema = z
   });
 
 const badgeId = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+const knownBadgeIds = new Set(badgeCatalog.map((badge) => badge.badgeId));
 export const editionSchema = z
   .object({
     schemaVersion: z.literal(1),
@@ -149,6 +151,12 @@ export const editionSchema = z
       context.addIssue({ code: 'custom', path: ['entries'], message: 'Duplicate team entry' });
     const awards = new Set<string>();
     edition.badges.forEach((award, index) => {
+      if (!knownBadgeIds.has(award.badgeId))
+        context.addIssue({
+          code: 'custom',
+          path: ['badges', index, 'badgeId'],
+          message: 'Unknown badge',
+        });
       if (!ids.includes(award.teamId))
         context.addIssue({
           code: 'custom',
@@ -163,6 +171,27 @@ export const editionSchema = z
           message: 'Duplicate badge award',
         });
       awards.add(key);
+    });
+    edition.entries.forEach((entry, entryIndex) => {
+      entry.badgeIds.forEach((entryBadgeId, badgeIndex) => {
+        if (!knownBadgeIds.has(entryBadgeId))
+          context.addIssue({
+            code: 'custom',
+            path: ['entries', entryIndex, 'badgeIds', badgeIndex],
+            message: 'Unknown badge',
+          });
+      });
+      const awarded = edition.badges
+        .filter((award) => award.teamId === entry.teamId)
+        .map((award) => award.badgeId)
+        .sort();
+      const referenced = [...entry.badgeIds].sort();
+      if (awarded.join('\0') !== referenced.join('\0'))
+        context.addIssue({
+          code: 'custom',
+          path: ['entries', entryIndex, 'badgeIds'],
+          message: 'Badge references disagree with awards',
+        });
     });
   });
 

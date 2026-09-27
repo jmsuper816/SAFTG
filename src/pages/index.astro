@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import RankingCard from '../components/RankingCard.astro';
 import WeekNavigation from '../components/WeekNavigation.astro';
+import BadgeSummary from '../components/BadgeSummary.astro';
 import { latestEdition, loadEditions } from '../lib/editions/load';
 const editions = await loadEditions();
 const edition = latestEdition(editions);
@@ -24,6 +25,7 @@ const edition = latestEdition(editions);
         </p>
       </header>
       <WeekNavigation editions={editions} current={edition} />
+      <BadgeSummary edition={edition} />
       <section class="rankings" aria-label="Current power rankings">
         {edition.entries.map((entry) => (
           <RankingCard

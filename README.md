@@ -62,6 +62,14 @@ week and does not affect records, scores, or badges.
 If the ranking or ESPN data is missing, malformed, or incomplete, generation exits non-zero and
 writes no edition. The last valid deployed edition stays live.
 
+## Badge summary
+
+Current and historical ranking pages show a **Badge Summary** between week navigation and the team
+rankings. Awards are grouped by badge, while tied recipients appear together in ranking order.
+Badge names, earned week, and recipients are visible immediately; activate a group to reveal the
+badge description and each recipient's reason. The disclosure controls work with keyboard or
+pointer input and do not require JavaScript. Existing badges remain on individual team cards.
+
 ## Corrections, recovery, and rollback
 
 - ESPN stat corrections require regenerating the affected edition on a branch and reviewing the

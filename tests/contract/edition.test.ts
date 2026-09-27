@@ -69,6 +69,46 @@ describe('edition contract', () => {
         badges: [{ badgeId: 'top-score', teamId: 'nope', reason: 'Nope', metric: 1 }],
       }),
     ).toThrow());
+  it('rejects unknown catalog badge IDs', () =>
+    expect(() =>
+      editionSchema.parse({
+        ...validEdition,
+        entries: [
+          { ...validEdition.entries[0], badgeIds: ['unknown-badge'] },
+          validEdition.entries[1],
+        ],
+        badges: [{ badgeId: 'unknown-badge', teamId: '1', reason: 'Unknown.', metric: null }],
+      }),
+    ).toThrow(/Unknown badge/));
+  it('rejects duplicate badge and team awards', () => {
+    const award = {
+      badgeId: 'scoreboard-scorcher',
+      teamId: '1',
+      reason: 'High score.',
+      metric: 120,
+    };
+    expect(() =>
+      editionSchema.parse({
+        ...validEdition,
+        entries: [
+          { ...validEdition.entries[0], badgeIds: ['scoreboard-scorcher'] },
+          validEdition.entries[1],
+        ],
+        badges: [award, award],
+      }),
+    ).toThrow(/Duplicate badge award/);
+  });
+  it('rejects disagreement between awards and entry badge IDs', () =>
+    expect(() =>
+      editionSchema.parse({
+        ...validEdition,
+        entries: [
+          { ...validEdition.entries[0], badgeIds: ['scoreboard-scorcher'] },
+          validEdition.entries[1],
+        ],
+        badges: [],
+      }),
+    ).toThrow(/Badge references disagree/));
   it('rejects non-final source status', () =>
     expect(() =>
       editionSchema.parse({
