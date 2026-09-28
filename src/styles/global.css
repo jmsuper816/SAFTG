@@ -23,6 +23,7 @@
 
 html {
   min-width: 20rem;
+  scroll-padding-top: 1rem;
   background: var(--page-fallback);
 }
 
@@ -105,6 +106,7 @@ main {
 
 main {
   padding-block: 2rem 3rem;
+  padding-bottom: max(3rem, env(safe-area-inset-bottom));
 }
 
 .hero {
@@ -135,6 +137,28 @@ main {
   scroll-margin-top: 1rem;
 }
 
+.recap-divider {
+  width: 4rem;
+  margin: 1.35rem 0;
+  border: 0;
+  border-top: 0.25rem solid var(--movement-down);
+}
+
+.weekly-recap {
+  max-width: 48rem;
+  color: var(--ink-muted);
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.65;
+}
+
+.weekly-recap p {
+  margin: 0;
+}
+
+.weekly-recap p + p {
+  margin-top: 1rem;
+}
+
 .eyebrow {
   color: var(--accent);
   text-transform: uppercase;
@@ -155,6 +179,14 @@ main {
   box-shadow: 0 0.8rem 2rem rgb(0 20 27 / 28%);
 }
 
+.week-nav > a,
+.week-nav > span,
+.all-weeks summary {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+}
+
 .all-weeks {
   margin-left: auto;
   position: relative;
@@ -163,6 +195,7 @@ main {
 .all-weeks summary {
   color: var(--accent);
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 .all-weeks ul {
@@ -230,6 +263,8 @@ main {
   flex-wrap: wrap;
   padding: 0.85rem;
   cursor: pointer;
+  min-height: 4.5rem;
+  touch-action: manipulation;
   overflow-wrap: anywhere;
 }
 
@@ -404,6 +439,7 @@ main {
   color: var(--surface-elevated);
   font-weight: 900;
   text-decoration: none;
+  touch-action: manipulation;
 }
 
 .button:hover,
@@ -419,25 +455,141 @@ main {
 
 @media (max-width: 40rem) {
   main {
-    width: min(100% - 1rem, 72rem);
+    width: 100%;
+    padding: max(0.75rem, env(safe-area-inset-top)) max(0.75rem, env(safe-area-inset-right))
+      max(2rem, env(safe-area-inset-bottom)) max(0.75rem, env(safe-area-inset-left));
+  }
+
+  .hero {
+    padding: 1.1rem;
+    border-radius: 1rem;
+  }
+
+  .hero h1,
+  .empty h1 {
+    font-size: clamp(2rem, 11vw, 3rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .hero > p:not(.eyebrow) {
+    margin-bottom: 0;
+  }
+
+  .weekly-recap {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .week-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .week-nav > a,
+  .week-nav > span {
+    justify-content: center;
+    padding: 0.45rem;
+    border-radius: 0.55rem;
+    text-align: center;
+  }
+
+  .week-nav > a {
+    border: 1px solid var(--border);
+    background: var(--surface-elevated);
+    text-decoration: none;
+  }
+
+  .badge-summary {
+    margin-bottom: 1.25rem;
+    padding: 0.9rem;
+  }
+
+  .badge-summary-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .badge-summary-group summary {
+    display: grid;
+    grid-template-columns: 3.25rem minmax(0, 1fr);
+    gap: 0.65rem;
+    padding: 0.75rem;
+  }
+
+  .badge-summary-group summary::after {
+    grid-column: 2;
+    justify-self: start;
+    margin-left: 0;
+  }
+
+  .badge-summary-details {
+    padding: 0 0.8rem 0.8rem;
   }
 
   .ranking-card {
-    grid-template-columns: 3.2rem minmax(0, 1fr);
-    padding: 1rem;
+    grid-template-columns: 2.75rem minmax(0, 1fr);
+    gap: 0.65rem;
+    padding: 0.9rem;
+    border-radius: 0.9rem;
   }
 
   .rank {
-    font-size: 1.7rem;
+    font-size: 1.55rem;
+  }
+
+  .team-heading {
+    gap: 0.45rem 0.75rem;
+  }
+
+  .team-heading h2 {
+    font-size: 1.12rem;
+    line-height: 1.2;
+  }
+
+  .record {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .badges,
+  .badge {
+    width: 100%;
+  }
+
+  .badge {
+    max-width: none;
+    align-items: flex-start;
+    padding: 0.65rem;
+  }
+
+  .badge img {
+    flex: 0 0 auto;
+  }
+
+  .back-to-top {
+    width: 100%;
+    min-height: 3rem;
+    text-align: center;
   }
 
   .all-weeks {
+    grid-column: 1 / -1;
     width: 100%;
     margin: 0;
   }
 
+  .all-weeks summary {
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: 0.55rem;
+    background: var(--surface-elevated);
+  }
+
   .all-weeks ul {
     position: static;
+    margin-bottom: 0;
   }
 }
 

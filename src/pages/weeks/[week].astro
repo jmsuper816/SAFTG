@@ -5,6 +5,7 @@ import RankingCard from '../../components/RankingCard.astro';
 import WeekNavigation from '../../components/WeekNavigation.astro';
 import BadgeSummary from '../../components/BadgeSummary.astro';
 import { loadEditions } from '../../lib/editions/load';
+import { loadPublishedRecaps } from '../../lib/recaps/load';
 export const getStaticPaths = (async () =>
   (await loadEditions()).map((edition) => ({
     params: { week: String(edition.week.number) },
@@ -12,6 +13,8 @@ export const getStaticPaths = (async () =>
   }))) satisfies GetStaticPaths;
 const { edition } = Astro.props;
 const editions = await loadEditions();
+const recaps = await loadPublishedRecaps(editions);
+const recap = recaps.get(edition.editionId);
 ---
 
 <BaseLayout title="Sundays Are For The Girls Weekly Roundup">
@@ -28,6 +31,12 @@ const editions = await loadEditions();
         })}
       </time>
     </p>
+    <hr class="recap-divider" aria-hidden="true" />
+    <div class="weekly-recap" role="region" aria-label="Weekly recap">
+      {recap?.paragraphs.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
+    </div>
   </header>
   <WeekNavigation editions={editions} current={edition} />
   <BadgeSummary edition={edition} />

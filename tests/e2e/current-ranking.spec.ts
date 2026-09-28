@@ -18,6 +18,14 @@ test('shows the complete current commissioner ranking without runtime data calls
     'datetime',
     '2026-09-15T16:00:00.000Z',
   );
+  const recap = page.getByRole('region', { name: 'Weekly recap' });
+  await expect(page.locator('.hero time')).toBeVisible();
+  await expect(page.locator('.hero .recap-divider')).toBeVisible();
+  await expect(recap.locator('p')).toHaveCount(5);
+  await expect(recap).toContainText('Shannon’s Serving Punt');
+  await expect(page.locator('.hero .weekly-recap')).toBeVisible();
+  await expect(page.locator('.hero + .week-nav')).toBeVisible();
+  await expect(page.getByText('implementation-draft-week-02')).toHaveCount(0);
   await expect(page.getByText('Tuesday Power', { exact: true })).toHaveCount(0);
   await expect(page.getByText('Commissioner calls. League chaos.', { exact: true })).toHaveCount(0);
   await expect(page.getByText(/Built for fun/)).toHaveCount(0);

@@ -8,6 +8,9 @@ test('navigates edition-isolated historical badge summaries', async ({ page }) =
   ).toBeVisible();
   await expect(page.getByText('Week 1 · Historical')).toBeVisible();
   await expect(page.locator('.hero > p:not(.eyebrow)')).toHaveText('September 8, 2026');
+  const weekOneRecap = page.getByRole('region', { name: 'Weekly recap' });
+  await expect(weekOneRecap.locator('p')).toHaveCount(4);
+  await expect(weekOneRecap).toContainText('Slayday Barbie');
   await expect(page.getByText('Tuesday Power', { exact: true })).toHaveCount(0);
   await expect(page.getByText('Commissioner calls. League chaos.', { exact: true })).toHaveCount(0);
   await expect(page.getByText(/Built for fun/)).toHaveCount(0);
@@ -30,6 +33,12 @@ test('navigates edition-isolated historical badge summaries', async ({ page }) =
 
   await page.getByRole('link', { name: 'Week 2 →' }).click();
   await expect(page).toHaveURL(/\/weeks\/2\/$/);
+  await expect(page.getByRole('region', { name: 'Weekly recap' })).toContainText(
+    'Shannon’s Serving Punt',
+  );
+  await expect(page.getByRole('region', { name: 'Weekly recap' })).not.toContainText(
+    'Slayday Barbie brought the fireworks',
+  );
   await expect(page.getByRole('region', { name: 'Badge Summary' }).locator('details')).toHaveCount(
     6,
   );

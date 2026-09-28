@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-01",
+  "cutoff": {
+    "previous": "2026-08-01T00:00:00.000Z",
+    "current": "2026-09-08T16:00:00.000Z"
+  },
+  "leagueFactIds": [
+    "team-3-rank",
+    "team-3-score",
+    "team-3-badge-scoreboard-scorcher",
+    "team-3-badge-steamroller",
+    "team-6-rank",
+    "team-6-score",
+    "team-13-rank",
+    "team-13-score",
+    "team-1-rank",
+    "team-1-score",
+    "team-1-badge-hard-luck-hero"
+  ],
+  "lineupEvidence": [],
+  "newsSources": [],
+  "commissionerNoteDigests": []
+}

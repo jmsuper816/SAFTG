@@ -26,6 +26,7 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run edition:verify -- --season 2026 --week 3
+      - run: npm run recap:verify -- --all
       - run: npm run build
         env:
           SITE_ORIGIN: https://example.github.io

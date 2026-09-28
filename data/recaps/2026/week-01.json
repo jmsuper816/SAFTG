@@ -1,0 +1,55 @@
+{
+  "paragraphs": [
+    "Week 1 kicked the door in, and Slayday Barbie brought the fireworks: 169.46 points, Winner of the Week, and a Steamroller win. Casual opening statement.",
+    "Shannon’s Serving Punt and Milk These TDs matched at 144.50 points, landing at No. 2 and No. 3. Apparently sharing is caring, even when the thing being shared is league-wide anxiety.",
+    "The Waffles Special put up 123.30 and still took the loss, earning the Hard Luck Hero badge and proving that a respectable score can still become emotional damage.",
+    "One week down, fifteen teams already plotting revenge, and absolutely nobody allowed to relax. Welcome back to the chaos."
+  ],
+  "evidenceRefs": [
+    {
+      "paragraphIndex": 0,
+      "factIds": [
+        "team-3-score",
+        "team-3-badge-scoreboard-scorcher",
+        "team-3-badge-steamroller"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 1,
+      "factIds": [
+        "team-6-rank",
+        "team-6-score",
+        "team-13-rank",
+        "team-13-score"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 2,
+      "factIds": [
+        "team-1-score",
+        "team-1-badge-hard-luck-hero"
+      ],
+      "sourceIds": []
+    }
+  ],
+  "warnings": [],
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-01",
+  "generation": {
+    "generatedAt": "2026-09-28T16:00:00.000Z",
+    "provider": "openai",
+    "configuredModel": "gpt-5.5",
+    "responseModel": "gpt-5.5",
+    "requestId": "implementation-draft-week-01",
+    "promptVersion": 1,
+    "inputDigest": "7af03218ad3b50061f055f99783fdb4577105745cec01e92fa8fc2e6128a17f5"
+  },
+  "approval": {
+    "status": "approved",
+    "commissioner": "Jessica",
+    "approvedAt": "2026-09-28T15:18:00.409Z",
+    "contentDigest": "f2754d363eea9b6f10ff7abe35be414aefc18f5d35f71dd3dd0e1f7d00bc9566"
+  }
+}

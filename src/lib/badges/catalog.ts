@@ -3,7 +3,7 @@ import type { BadgeDefinition } from '../domain/types.ts';
 export const badgeCatalog: BadgeDefinition[] = [
   {
     badgeId: 'scoreboard-scorcher',
-    name: 'Scoreboard Scorcher',
+    name: 'Winner of the Week',
     description: 'Highest score of the week.',
     scope: 'weekly',
     exclusive: false,

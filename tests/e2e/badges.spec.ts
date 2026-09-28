@@ -10,7 +10,7 @@ test('summarizes current awards and reveals reasons with native disclosure', asy
   await expect(section).toBeVisible();
   await expect(section).toHaveCSS('background-color', 'rgb(5, 45, 55)');
   await expect(section.locator('details')).toHaveCount(6);
-  await expect(section.locator('summary').first()).toContainText('Scoreboard Scorcher');
+  await expect(section.locator('summary').first()).toContainText('Winner of the Week');
   await expect(section.locator('summary').first()).toContainText('Week 2');
   await expect(section.locator('summary').first()).toContainText('The Waffles Special');
   await expect(section.locator('.badge-summary-description').first()).toBeHidden();
@@ -29,7 +29,7 @@ test('summarizes current awards and reveals reasons with native disclosure', asy
   await first.locator('summary').press('Space');
   await expect(first).not.toHaveAttribute('open', '');
 
-  await expect(page.getByLabel(/Scoreboard Scorcher, earned week 2/)).toBeVisible();
+  await expect(page.getByLabel(/Winner of the Week, earned week 2/)).toBeVisible();
   expect(requests).toEqual([]);
 });
 

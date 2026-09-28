@@ -8,6 +8,8 @@ const secretPatterns = [
   /(?:api[_-]?key|client[_-]?secret|access[_-]?token|password)\s*[=:]\s*['"][^'"]+/i,
   /espn_s2/i,
   /SWID/i,
+  /OPENAI_API_KEY/,
+  /"(?:requestId|inputDigest|contentDigest|sourceId|commissionerNoteDigests)"/,
 ];
 const failures: string[] = [];
 async function walk(directory: string): Promise<void> {

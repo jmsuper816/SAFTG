@@ -1,0 +1,64 @@
+{
+  "paragraphs": [
+    "Week 2 chose movement. Shannon’s Serving Punt climbed seven spots into the No. 1 chair with 114.66 points, so please update all throne-related correspondence accordingly.",
+    "The Waffles Special led the league with 138.48 points and claimed Winner of the Week honors. Sacks in the City was right behind at 137.46 and turned that total into a 42.28-point Steamroller win.",
+    "Whisk Takers jumped eight places to No. 7 and added a Giant Slayer badge, while Sammy’s Ball Handlers scored 117.52 only to receive the deeply unhelpful consolation prize of Hard Luck Hero.",
+    "NFL Week 1 also delivered a fresh round of injury and availability news, but without verified lineup evidence we are not assigning any of that real-football chaos credit—or blame—for these fantasy results.",
+    "Week 3, the floor is yours. Please be normal about it."
+  ],
+  "evidenceRefs": [
+    {
+      "paragraphIndex": 0,
+      "factIds": [
+        "team-6-rank",
+        "team-6-score"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 1,
+      "factIds": [
+        "team-1-score",
+        "team-1-badge-scoreboard-scorcher",
+        "team-7-score",
+        "team-7-badge-steamroller"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 2,
+      "factIds": [
+        "team-8-rank",
+        "team-8-badge-giant-slayer",
+        "team-11-score",
+        "team-11-badge-hard-luck-hero"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 3,
+      "factIds": [],
+      "sourceIds": [
+        "nfl-week-1-sunday-injuries"
+      ]
+    }
+  ],
+  "warnings": [],
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-02",
+  "generation": {
+    "generatedAt": "2026-09-28T16:00:00.000Z",
+    "provider": "openai",
+    "configuredModel": "gpt-5.5",
+    "responseModel": "gpt-5.5",
+    "requestId": "implementation-draft-week-02",
+    "promptVersion": 1,
+    "inputDigest": "c92cc3b620951da8611cf1bd86ddc8c369bdf704aaab4f9d7f6a4047386996ab"
+  },
+  "approval": {
+    "status": "approved",
+    "commissioner": "Jessica",
+    "approvedAt": "2026-09-28T15:18:00.557Z",
+    "contentDigest": "a9ac509850786c34532a93c26ef9c662c088a5263f50161828563e51a7d94b5f"
+  }
+}

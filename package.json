@@ -7,6 +7,7 @@
     "node": ">=24"
   },
   "scripts": {
+    "prebuild": "npm run recap:verify -- --all",
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
     "preview": "node --experimental-strip-types scripts/serve-preview.ts",
@@ -21,11 +22,15 @@
     "edition:generate": "node --experimental-strip-types scripts/generate-edition.ts",
     "edition:verify": "node --experimental-strip-types scripts/generate-edition.ts --verify",
     "edition:expected": "node --experimental-strip-types scripts/check-expected-edition.ts",
+    "recap:draft": "node --experimental-strip-types scripts/generate-recap.ts",
+    "recap:approve": "node --experimental-strip-types scripts/approve-recap.ts",
+    "recap:verify": "node --experimental-strip-types scripts/verify-recaps.ts",
     "check:links": "node --experimental-strip-types scripts/check-links.ts",
     "scan:secrets": "node --experimental-strip-types scripts/scan-artifact.ts"
   },
   "dependencies": {
     "astro": "7.3.4",
+    "openai": "7.23.0",
     "zod": "4.6.5"
   },
   "devDependencies": {

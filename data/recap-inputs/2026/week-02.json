@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-02",
+  "cutoff": {
+    "previous": "2026-09-08T16:00:00.000Z",
+    "current": "2026-09-15T16:00:00.000Z"
+  },
+  "leagueFactIds": [
+    "team-6-rank",
+    "team-6-score",
+    "team-1-rank",
+    "team-1-score",
+    "team-1-badge-scoreboard-scorcher",
+    "team-8-rank",
+    "team-8-score",
+    "team-8-badge-giant-slayer",
+    "team-7-rank",
+    "team-7-score",
+    "team-7-badge-steamroller",
+    "team-11-rank",
+    "team-11-score",
+    "team-11-badge-hard-luck-hero"
+  ],
+  "lineupEvidence": [],
+  "newsSources": [
+    {
+      "sourceId": "nfl-week-1-sunday-injuries",
+      "publisherType": "nfl",
+      "publisher": "NFL",
+      "url": "https://www.nfl.com/news/notable-injuries-news-from-sunday-s-week-1-games-2026",
+      "title": "Notable injuries, news from Sunday's Week 1 games",
+      "publishedAt": "2026-09-13T17:49:00.000Z",
+      "updatedAt": null,
+      "accessedAt": "2026-09-28T16:00:00.000Z",
+      "subjects": ["nfl-week-1"],
+      "summary": "NFL.com's live Week 1 report recorded injuries and availability developments across Sunday's games. No fantasy-team impact is inferred without verified lineup evidence."
+    }
+  ],
+  "commissionerNoteDigests": []
+}

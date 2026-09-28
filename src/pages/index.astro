@@ -4,8 +4,14 @@ import RankingCard from '../components/RankingCard.astro';
 import WeekNavigation from '../components/WeekNavigation.astro';
 import BadgeSummary from '../components/BadgeSummary.astro';
 import { latestEdition, loadEditions } from '../lib/editions/load';
+import { loadPublishedRecaps } from '../lib/recaps/load';
+import type { PublishedRecap } from '../lib/recaps/types';
 const editions = await loadEditions();
 const edition = latestEdition(editions);
+const recaps = editions.length
+  ? await loadPublishedRecaps(editions)
+  : new Map<string, PublishedRecap>();
+const recap = edition ? recaps.get(edition.editionId) : undefined;
 ---
 
 <BaseLayout title="Sundays Are For The Girls Weekly Roundup">
@@ -24,6 +30,12 @@ const edition = latestEdition(editions);
             })}
           </time>
         </p>
+        <hr class="recap-divider" aria-hidden="true" />
+        <div class="weekly-recap" role="region" aria-label="Weekly recap">
+          {recap?.paragraphs.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </div>
       </header>
       <WeekNavigation editions={editions} current={edition} />
       <BadgeSummary edition={edition} />

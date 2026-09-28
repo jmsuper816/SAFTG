@@ -89,6 +89,33 @@ art lives in `src/assets/backgrounds/` and Astro emits fingerprinted, GitHub Pag
 See `specs/003-color-scheme-design/quickstart.md` for the complete contrast, reflow, orientation,
 fallback, and accessibility validation matrix.
 
+## Weekly recap workflow
+
+The short recap beneath each publication date is generated before the static build and cannot be
+published until a commissioner approves it. The browser and GitHub Pages build never contact a
+news site or an AI provider.
+
+1. Add or update `data/recap-inputs/<season>/week-<NN>.json`. Use only official NFL or team sources,
+   summarize them in your own words, and record verified `started` or `bench` lineup evidence when
+   connecting real-football news to a fantasy result. A bench performance is a missed opportunity,
+   not points that affected the matchup.
+2. Optionally add private context to `data/recap-notes/<season>/week-<NN>.txt`. That directory is
+   ignored by Git. Put the note's SHA-256 digest in the evidence manifest; raw notes must never be
+   committed.
+3. Export `OPENAI_API_KEY` locally, then run
+   `npm run recap:draft -- --season <year> --week <number>`. `RECAP_MODEL` and
+   `RECAP_TIMEOUT_MS` may be overridden using `.env` values.
+4. Fact-check and edit the generated JSON in `data/recaps/`. Every factual paragraph must refer to
+   known fact/source IDs and `warnings` must be empty.
+5. After the commissioner reviews the exact prose, run
+   `npm run recap:approve -- --season <year> --week <number> --commissioner "<name>"`.
+6. Run `npm run recap:verify -- --all`. Changing ranking facts, evidence, notes, prompt/model
+   configuration, references, or prose invalidates approval and requires regeneration or review and
+   reapproval.
+
+Tests use an injected fake generator and never need an API key. Ordinary builds are also
+network-free, but intentionally fail when an edition is missing a current approved recap.
+
 ## Corrections, recovery, and rollback
 
 - ESPN stat corrections require regenerating the affected edition on a branch and reviewing the

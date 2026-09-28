@@ -52,14 +52,24 @@ test('reflows at 320 CSS pixels with expanded long content', async ({ page }) =>
   await page.evaluate(() => {
     const team = document.querySelector<HTMLElement>('.team-heading h2');
     const reason = document.querySelector<HTMLElement>('.badge-summary-details li span');
+    const recap = document.querySelector<HTMLElement>('.weekly-recap p');
     if (team) team.textContent = 'Maximum Length Team Name '.repeat(4);
     if (reason) reason.textContent = 'Long award reason '.repeat(30);
+    if (recap) recap.textContent = 'Long weekly recap sentence '.repeat(40);
   });
   await expectNoHorizontalOverflow(page);
+  await expect(page.locator('.recap-divider')).toBeVisible();
+  await expect(page.getByRole('region', { name: 'Weekly recap' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'POWER RANKING', exact: true })).toBeVisible();
   await expect(page.locator('.ranking-card').first()).toBeVisible();
   await expect(page.locator('.ranking-card').last()).toBeVisible();
   await expect(page.getByRole('link', { name: 'Back to top' })).toBeVisible();
+  for (const control of await page
+    .locator('.week-nav > a, .week-nav summary, .back-to-top')
+    .all()) {
+    const box = await control.boundingBox();
+    expect(box?.height).toBeGreaterThanOrEqual(44);
+  }
 });
 
 test('preserves content and focus visibility at 200 percent text size', async ({ page }) => {
@@ -69,6 +79,7 @@ test('preserves content and focus visibility at 200 percent text size', async ({
     document.documentElement.style.fontSize = '200%';
   });
   await expectNoHorizontalOverflow(page);
+  await expect(page.getByRole('region', { name: 'Weekly recap' })).toBeVisible();
   await expect(
     page.getByRole('heading', { level: 1, name: 'Sundays Are For The Girls Weekly Roundup' }),
   ).toBeVisible();
