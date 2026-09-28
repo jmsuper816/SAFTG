@@ -67,9 +67,10 @@ export function evaluateBadges(entries: RankingEntry[], matchups: Matchup[]): Ba
     });
 
   const streaks = entries
-    .filter((entry) => entry.winningStreak > 0)
+    .filter((entry) => entry.winningStreak >= 2)
     .map((entry) => ({ teamId: entry.teamId, value: entry.winningStreak }));
-  for (const item of tiedExtrema(streaks, 'max'))
+  const longestStreaks = tiedExtrema(streaks, 'max');
+  for (const item of longestStreaks.length === 1 ? longestStreaks : [])
     awards.push({
       badgeId: 'hot-streak',
       teamId: item.teamId,

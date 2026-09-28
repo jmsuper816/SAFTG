@@ -49,10 +49,10 @@ export const badgeCatalog: BadgeDefinition[] = [
   {
     badgeId: 'hot-streak',
     name: 'Hot Streak',
-    description: 'Longest active winning streak.',
+    description: 'Sole longest active winning streak of at least two games.',
     scope: 'streak',
-    exclusive: false,
-    tieRule: 'all',
+    exclusive: true,
+    tieRule: 'none',
     assetPath: 'assets/badges/hot-streak.svg',
   },
   {

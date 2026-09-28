@@ -17,6 +17,22 @@
   color: var(--ink);
 }
 
+:root[data-theme='light'] {
+  color-scheme: light;
+  --page-fallback: #8ae7e3;
+  --artwork-tint: rgb(239 255 254 / 46%);
+  --surface: #fff;
+  --surface-elevated: #f5fffe;
+  --ink: #052d37;
+  --ink-muted: #285a62;
+  --accent: #006d73;
+  --movement-up: #006d73;
+  --movement-down: #c51965;
+  --border: #168a90;
+  --focus-inner: #c51965;
+  --focus-outer: #052d37;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -102,6 +118,34 @@ a {
 main {
   width: min(72rem, calc(100% - 2rem));
   margin-inline: auto;
+}
+
+.theme-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.75rem;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 0.5rem 1.2rem rgb(0 20 27 / 22%);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  touch-action: manipulation;
+}
+
+.theme-toggle:hover,
+.theme-toggle:active {
+  border-color: var(--movement-down);
 }
 
 main {
@@ -352,6 +396,10 @@ main {
   box-shadow: 0 1rem 2.5rem rgb(0 20 27 / 45%);
 }
 
+:root[data-theme='light'] .ranking-card {
+  background: linear-gradient(145deg, #fff, var(--surface-elevated));
+}
+
 .rank {
   font-size: 2.25rem;
   font-weight: 950;
@@ -391,6 +439,21 @@ main {
 .record {
   color: var(--ink-muted);
   margin: 0.35rem 0;
+}
+
+.streak-count {
+  display: inline-flex;
+  min-height: 1.65rem;
+  align-items: center;
+  gap: 0.15rem;
+  margin-left: 0.45rem;
+  padding: 0.05rem 0.45rem;
+  border: 1px solid var(--movement-down);
+  border-radius: 999px;
+  background: rgb(255 112 174 / 14%);
+  color: var(--ink);
+  font-weight: 900;
+  white-space: nowrap;
 }
 
 .badges {
@@ -463,6 +526,10 @@ main {
   .hero {
     padding: 1.1rem;
     border-radius: 1rem;
+  }
+
+  .theme-controls {
+    margin-bottom: 0.5rem;
   }
 
   .hero h1,

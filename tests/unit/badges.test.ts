@@ -61,7 +61,22 @@ describe('badges', () => {
       { ...matchups[0]!, homeScore: 100, awayScore: 100, winnerTeamId: null },
     ]);
     expect(awards.filter((award) => award.badgeId === 'scoreboard-scorcher')).toHaveLength(2);
-    expect(awards.filter((award) => award.badgeId === 'hot-streak')).toHaveLength(2);
+    expect(awards.filter((award) => award.badgeId === 'hot-streak')).toHaveLength(0);
+  });
+  it('does not award a hot streak for a first win', () => {
+    const firstWins = entries.map((entry) => ({ ...entry, winningStreak: 1 }));
+    expect(
+      evaluateBadges(firstWins, matchups).filter((award) => award.badgeId === 'hot-streak'),
+    ).toHaveLength(0);
+  });
+  it('awards hot streak to a sole longest qualifying streak', () => {
+    const distinct = entries.map((entry, index) => ({
+      ...entry,
+      winningStreak: index === 0 ? 3 : 2,
+    }));
+    expect(
+      evaluateBadges(distinct, matchups).filter((award) => award.badgeId === 'hot-streak'),
+    ).toEqual([expect.objectContaining({ teamId: '1', metric: 3 })]);
   });
   it('omits matchup badges when no team wins', () =>
     expect(

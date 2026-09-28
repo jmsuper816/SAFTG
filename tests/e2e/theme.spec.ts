@@ -25,6 +25,28 @@ test('selects one local fixed background for the initial orientation', async ({ 
   });
 });
 
+test('switches between dark and light surfaces and persists the choice', async ({ page }) => {
+  await page.goto('./');
+  const toggle = page.getByRole('button', { name: 'Light mode' });
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await expect(toggle).toHaveAttribute('aria-pressed', 'false');
+
+  await toggle.click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await expect(page.getByRole('button', { name: 'Dark mode' })).toHaveAttribute(
+    'aria-pressed',
+    'true',
+  );
+  expect(
+    await page.locator('.hero').evaluate((element) => getComputedStyle(element).backgroundColor),
+  ).toBe('rgb(255, 255, 255)');
+
+  await page.reload();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await page.getByRole('button', { name: 'Dark mode' }).click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+});
+
 test('switches portrait, landscape, and square variants without losing content', async ({
   page,
 }) => {

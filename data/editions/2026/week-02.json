@@ -34,7 +34,7 @@
         "pointsAgainst": 203.01999999999998
       },
       "weeklyScore": 114.66,
-      "winningStreak": 0,
+      "winningStreak": 2,
       "explanation": "Ranked 1st in ESPN's Week 2 power rankings.",
       "badgeIds": []
     },
@@ -52,7 +52,7 @@
         "pointsAgainst": 168.76
       },
       "weeklyScore": 100.88,
-      "winningStreak": 0,
+      "winningStreak": 2,
       "explanation": "Ranked 2nd in ESPN's Week 2 power rankings.",
       "badgeIds": []
     },
@@ -88,11 +88,9 @@
         "pointsAgainst": 182
       },
       "weeklyScore": 91.96,
-      "winningStreak": 0,
+      "winningStreak": 2,
       "explanation": "Ranked 4th in ESPN's Week 2 power rankings.",
-      "badgeIds": [
-        "photo-finish"
-      ]
+      "badgeIds": ["photo-finish"]
     },
     {
       "teamId": "5",
@@ -128,9 +126,7 @@
       "weeklyScore": 138.48,
       "winningStreak": 0,
       "explanation": "Ranked 6th in ESPN's Week 2 power rankings.",
-      "badgeIds": [
-        "scoreboard-scorcher"
-      ]
+      "badgeIds": ["scoreboard-scorcher"]
     },
     {
       "teamId": "8",
@@ -146,11 +142,9 @@
         "pointsAgainst": 170.76
       },
       "weeklyScore": 127.42,
-      "winningStreak": 0,
+      "winningStreak": 2,
       "explanation": "Ranked 7th in ESPN's Week 2 power rankings.",
-      "badgeIds": [
-        "giant-slayer"
-      ]
+      "badgeIds": ["giant-slayer"]
     },
     {
       "teamId": "13",
@@ -222,9 +216,7 @@
       "weeklyScore": 137.46,
       "winningStreak": 0,
       "explanation": "Ranked 11th in ESPN's Week 2 power rankings.",
-      "badgeIds": [
-        "steamroller"
-      ]
+      "badgeIds": ["steamroller"]
     },
     {
       "teamId": "4",
@@ -242,9 +234,7 @@
       "weeklyScore": 72.98,
       "winningStreak": 0,
       "explanation": "Ranked 12th in ESPN's Week 2 power rankings.",
-      "badgeIds": [
-        "basement-dweller"
-      ]
+      "badgeIds": ["basement-dweller"]
     },
     {
       "teamId": "11",
@@ -262,9 +252,7 @@
       "weeklyScore": 117.52,
       "winningStreak": 0,
       "explanation": "Ranked 13th in ESPN's Week 2 power rankings.",
-      "badgeIds": [
-        "hard-luck-hero"
-      ]
+      "badgeIds": ["hard-luck-hero"]
     },
     {
       "teamId": "2",

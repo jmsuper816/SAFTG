@@ -40,6 +40,15 @@ const movementState =
       {entry.record.wins}–{entry.record.losses}
       {entry.record.ties ? `–${entry.record.ties}` : ''} · Week {week}:{' '}
       {entry.weeklyScore.toFixed(2)} pts
+      {entry.winningStreak >= 2 && (
+        <span
+          class="streak-count"
+          aria-label={`${entry.winningStreak}-game winning streak`}
+          title={`${entry.winningStreak}-game winning streak`}
+        >
+          <span aria-hidden="true">🔥</span> {entry.winningStreak}
+        </span>
+      )}
     </p>
     {awards.length > 0 && (
       <div class="badges" aria-label={`${entry.displayName} badges`}>

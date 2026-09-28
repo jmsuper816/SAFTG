@@ -21,13 +21,14 @@ export const editionFactProjection = (edition: WeeklyEdition) => ({
   editionId: edition.editionId,
   publishedAt: edition.publishedAt,
   entries: edition.entries.map(
-    ({ teamId, displayName, rank, movement, record, weeklyScore, badgeIds }) => ({
+    ({ teamId, displayName, rank, movement, record, weeklyScore, winningStreak, badgeIds }) => ({
       teamId,
       displayName,
       rank,
       movement,
       record,
       weeklyScore,
+      winningStreak,
       badgeIds,
     }),
   ),

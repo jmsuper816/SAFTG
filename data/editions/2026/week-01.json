@@ -36,9 +36,7 @@
       "weeklyScore": 121.5,
       "winningStreak": 1,
       "explanation": "Ranked 1st in ESPN's Week 1 power rankings.",
-      "badgeIds": [
-        "hot-streak"
-      ]
+      "badgeIds": []
     },
     {
       "teamId": "6",
@@ -56,9 +54,7 @@
       "weeklyScore": 144.5,
       "winningStreak": 1,
       "explanation": "Ranked 2nd in ESPN's Week 1 power rankings.",
-      "badgeIds": [
-        "hot-streak"
-      ]
+      "badgeIds": []
     },
     {
       "teamId": "13",
@@ -76,9 +72,7 @@
       "weeklyScore": 144.5,
       "winningStreak": 1,
       "explanation": "Ranked 3rd in ESPN's Week 1 power rankings.",
-      "badgeIds": [
-        "hot-streak"
-      ]
+      "badgeIds": []
     },
     {
       "teamId": "3",
@@ -98,8 +92,7 @@
       "explanation": "Ranked 4th in ESPN's Week 1 power rankings.",
       "badgeIds": [
         "scoreboard-scorcher",
-        "steamroller",
-        "hot-streak"
+        "steamroller"
       ]
     },
     {
@@ -119,8 +112,7 @@
       "winningStreak": 1,
       "explanation": "Ranked 5th in ESPN's Week 1 power rankings.",
       "badgeIds": [
-        "photo-finish",
-        "hot-streak"
+        "photo-finish"
       ]
     },
     {
@@ -139,9 +131,7 @@
       "weeklyScore": 103.42,
       "winningStreak": 1,
       "explanation": "Ranked 6th in ESPN's Week 1 power rankings.",
-      "badgeIds": [
-        "hot-streak"
-      ]
+      "badgeIds": []
     },
     {
       "teamId": "1",
@@ -160,7 +150,6 @@
       "winningStreak": 1,
       "explanation": "Ranked 7th in ESPN's Week 1 power rankings.",
       "badgeIds": [
-        "hot-streak",
         "hard-luck-hero"
       ]
     },
@@ -180,9 +169,7 @@
       "weeklyScore": 122.36,
       "winningStreak": 1,
       "explanation": "Ranked 8th in ESPN's Week 1 power rankings.",
-      "badgeIds": [
-        "hot-streak"
-      ]
+      "badgeIds": []
     },
     {
       "teamId": "4",
@@ -201,8 +188,7 @@
       "winningStreak": 1,
       "explanation": "Ranked 9th in ESPN's Week 1 power rankings.",
       "badgeIds": [
-        "giant-slayer",
-        "hot-streak"
+        "giant-slayer"
       ]
     },
     {
@@ -257,9 +243,7 @@
       "weeklyScore": 78.66,
       "winningStreak": 1,
       "explanation": "Ranked 12th in ESPN's Week 1 power rankings.",
-      "badgeIds": [
-        "hot-streak"
-      ]
+      "badgeIds": []
     },
     {
       "teamId": "12",
@@ -277,9 +261,7 @@
       "weeklyScore": 94.84,
       "winningStreak": 1,
       "explanation": "Ranked 13th in ESPN's Week 1 power rankings.",
-      "badgeIds": [
-        "hot-streak"
-      ]
+      "badgeIds": []
     },
     {
       "teamId": "15",
@@ -315,9 +297,7 @@
       "weeklyScore": 71.9,
       "winningStreak": 1,
       "explanation": "Ranked 15th in ESPN's Week 1 power rankings.",
-      "badgeIds": [
-        "hot-streak"
-      ]
+      "badgeIds": []
     },
     {
       "teamId": "14",
@@ -370,78 +350,6 @@
       "teamId": "4",
       "reason": "Beat a team ranked 7 places higher.",
       "metric": 7
-    },
-    {
-      "badgeId": "hot-streak",
-      "teamId": "10",
-      "reason": "Extended a 1-game winning streak.",
-      "metric": 1
-    },
-    {
-      "badgeId": "hot-streak",
-      "teamId": "6",
-      "reason": "Extended a 1-game winning streak.",
-      "metric": 1
-    },
-    {
-      "badgeId": "hot-streak",
-      "teamId": "13",
-      "reason": "Extended a 1-game winning streak.",
-      "metric": 1
-    },
-    {
-      "badgeId": "hot-streak",
-      "teamId": "3",
-      "reason": "Extended a 1-game winning streak.",
-      "metric": 1
-    },
-    {
-      "badgeId": "hot-streak",
-      "teamId": "5",
-      "reason": "Extended a 1-game winning streak.",
-      "metric": 1
-    },
-    {
-      "badgeId": "hot-streak",
-      "teamId": "9",
-      "reason": "Extended a 1-game winning streak.",
-      "metric": 1
-    },
-    {
-      "badgeId": "hot-streak",
-      "teamId": "1",
-      "reason": "Extended a 1-game winning streak.",
-      "metric": 1
-    },
-    {
-      "badgeId": "hot-streak",
-      "teamId": "8",
-      "reason": "Extended a 1-game winning streak.",
-      "metric": 1
-    },
-    {
-      "badgeId": "hot-streak",
-      "teamId": "4",
-      "reason": "Extended a 1-game winning streak.",
-      "metric": 1
-    },
-    {
-      "badgeId": "hot-streak",
-      "teamId": "16",
-      "reason": "Extended a 1-game winning streak.",
-      "metric": 1
-    },
-    {
-      "badgeId": "hot-streak",
-      "teamId": "12",
-      "reason": "Extended a 1-game winning streak.",
-      "metric": 1
-    },
-    {
-      "badgeId": "hot-streak",
-      "teamId": "7",
-      "reason": "Extended a 1-game winning streak.",
-      "metric": 1
     },
     {
       "badgeId": "hard-luck-hero",

@@ -40,6 +40,9 @@ test('shows the complete current commissioner ranking without runtime data calls
   await expect(rankings.locator('.ranking-card').first()).toContainText(/Week 2: .* pts/);
   await expect(rankings.locator('.ranking-card [data-movement]').first()).toBeVisible();
   await expect(rankings.locator('.ranking-card .badge').first()).toBeVisible();
+  const streaks = rankings.locator('.streak-count');
+  expect(await streaks.count()).toBeGreaterThan(0);
+  await expect(streaks.first()).toHaveAttribute('aria-label', /\d+-game winning streak/);
   await expect(rankings.getByText(/Ranked \d+(?:st|nd|rd|th) in ESPN/)).toHaveCount(0);
   await expect(page.getByText('Shannon’s Serving Punt').first()).toBeVisible();
   expect(requests).toEqual([]);

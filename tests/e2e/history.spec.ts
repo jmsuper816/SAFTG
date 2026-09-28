@@ -16,7 +16,9 @@ test('navigates edition-isolated historical badge summaries', async ({ page }) =
   await expect(page.getByText(/Built for fun/)).toHaveCount(0);
   await expect(page.getByText('Pitts Out For the Boys').first()).toBeVisible();
   const historical = page.getByRole('region', { name: 'Badge Summary' });
-  await expect(historical.locator('details')).toHaveCount(7);
+  await expect(historical.locator('details')).toHaveCount(6);
+  await expect(historical.getByText('Hot Streak', { exact: true })).toHaveCount(0);
+  await expect(page.locator('.streak-count')).toHaveCount(0);
   await expect(historical.locator('summary').first()).toContainText('Week 1');
   expect(await page.locator('.ranking-card .badge').count()).toBeGreaterThan(0);
 
