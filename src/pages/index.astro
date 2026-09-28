@@ -37,7 +37,7 @@ const recap = edition ? recaps.get(edition.editionId) : undefined;
           ))}
         </div>
       </header>
-      <WeekNavigation editions={editions} current={edition} />
+      <WeekNavigation editions={editions} current={edition} isCurrentPage />
       <BadgeSummary edition={edition} />
       <section class="rankings" aria-label="Current power rankings">
         <h2 class="eyebrow rankings-heading">POWER RANKING</h2>

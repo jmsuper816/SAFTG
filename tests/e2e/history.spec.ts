@@ -33,6 +33,18 @@ test('navigates edition-isolated historical badge summaries', async ({ page }) =
   await expect(rankings.locator('.ranking-card [data-movement]').first()).toBeVisible();
   await expect(rankings.getByText(/Ranked \d+(?:st|nd|rd|th) in ESPN/)).toHaveCount(0);
 
+  if (test.info().project.name === 'mobile') {
+    const navigation = page.getByRole('navigation', { name: 'Ranking weeks' });
+    const previousBox = await navigation.locator('.week-nav-previous').boundingBox();
+    const nextBox = await navigation.locator('.week-nav-next').boundingBox();
+    const currentBox = await navigation.getByRole('link', { name: 'Current' }).boundingBox();
+    const allWeeksBox = await navigation.getByText('All weeks', { exact: true }).boundingBox();
+    expect(previousBox?.y).toBeCloseTo(nextBox?.y ?? 0, 0);
+    expect(currentBox?.y).toBeGreaterThan((previousBox?.y ?? 0) + (previousBox?.height ?? 0));
+    expect(allWeeksBox?.y).toBeGreaterThan((currentBox?.y ?? 0) + (currentBox?.height ?? 0));
+    expect(currentBox?.width).toBeCloseTo(allWeeksBox?.width ?? 0, 0);
+  }
+
   await page.getByRole('link', { name: 'Week 2 →' }).click();
   await expect(page).toHaveURL(/\/weeks\/2\/$/);
   await expect(page.getByRole('region', { name: 'Weekly recap' })).toContainText(

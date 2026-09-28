@@ -659,6 +659,30 @@ main {
     position: static;
     margin-bottom: 0;
   }
+
+  .week-nav--history {
+    grid-template-areas:
+      'previous next'
+      'current current'
+      'weeks weeks';
+  }
+
+  .week-nav--history .week-nav-previous {
+    grid-area: previous;
+  }
+
+  .week-nav--history .week-nav-next {
+    grid-area: next;
+  }
+
+  .week-nav--history .week-nav-current {
+    grid-area: current;
+    width: 100%;
+  }
+
+  .week-nav--history .all-weeks {
+    grid-area: weeks;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

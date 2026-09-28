@@ -3,21 +3,26 @@ import type { WeeklyEdition } from '../lib/domain/types';
 interface Props {
   editions: WeeklyEdition[];
   current: WeeklyEdition;
+  isCurrentPage?: boolean;
 }
-const { editions, current } = Astro.props;
+const { editions, current, isCurrentPage = false } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const index = editions.findIndex((edition) => edition.editionId === current.editionId);
 const previous = index > 0 ? editions[index - 1] : null;
 const next = index >= 0 && index < editions.length - 1 ? editions[index + 1] : null;
 ---
 
-<nav class="week-nav" aria-label="Ranking weeks">
+<nav class:list={['week-nav', { 'week-nav--history': !isCurrentPage }]} aria-label="Ranking weeks">
   {previous ? (
-    <a href={`${base}/weeks/${previous.week.number}/`}>← Week {previous.week.number}</a>
+    <a class="week-nav-previous" href={`${base}/weeks/${previous.week.number}/`}>
+      ← Week {previous.week.number}
+    </a>
   ) : (
-    <span>First edition</span>
+    <span class="week-nav-previous">First edition</span>
   )}
-  <a href={`${base}/`}>Current</a>
+  <a class="week-nav-current" href={`${base}/`}>
+    Current
+  </a>
   <details class="all-weeks">
     <summary>All weeks</summary>
     <ul>
@@ -34,8 +39,10 @@ const next = index >= 0 && index < editions.length - 1 ? editions[index + 1] : n
     </ul>
   </details>
   {next ? (
-    <a href={`${base}/weeks/${next.week.number}/`}>Week {next.week.number} →</a>
+    <a class="week-nav-next" href={`${base}/weeks/${next.week.number}/`}>
+      Week {next.week.number} →
+    </a>
   ) : (
-    <span>Latest edition</span>
+    <span class="week-nav-next">Latest edition</span>
   )}
 </nav>
