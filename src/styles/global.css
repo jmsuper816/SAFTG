@@ -648,6 +648,7 @@ main {
   }
 
   .all-weeks summary {
+    width: 100%;
     justify-content: center;
     border: 1px solid var(--border);
     border-radius: 0.55rem;

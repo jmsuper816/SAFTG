@@ -70,6 +70,9 @@ test('reflows at 320 CSS pixels with expanded long content', async ({ page }) =>
     const box = await control.boundingBox();
     expect(box?.height).toBeGreaterThanOrEqual(44);
   }
+  const allWeeks = await page.locator('.all-weeks').boundingBox();
+  const allWeeksButton = await page.locator('.all-weeks summary').boundingBox();
+  expect(allWeeksButton?.width).toBeCloseTo(allWeeks?.width ?? 0, 0);
 });
 
 test('preserves content and focus visibility at 200 percent text size', async ({ page }) => {
