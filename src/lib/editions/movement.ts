@@ -12,7 +12,7 @@ export function rankMovement(
 ): { previousRank: number | null; movement: number | null } {
   const prior = previousEntry(previous, teamId);
   const previousRank =
-    draftRanking?.rankings.find((entry) => entry.teamId === teamId)?.rank ?? prior?.rank;
+    prior?.rank ?? draftRanking?.rankings.find((entry) => entry.teamId === teamId)?.rank;
   return {
     previousRank: previousRank ?? null,
     movement: previousRank === undefined ? null : previousRank - rank,

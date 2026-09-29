@@ -5,6 +5,7 @@ import RankingCard from '../../components/RankingCard.astro';
 import WeekNavigation from '../../components/WeekNavigation.astro';
 import BadgeSummary from '../../components/BadgeSummary.astro';
 import { loadEditions } from '../../lib/editions/load';
+import { rankMovement } from '../../lib/editions/movement';
 import { loadPublishedRecaps } from '../../lib/recaps/load';
 export const getStaticPaths = (async () =>
   (await loadEditions()).map((edition) => ({
@@ -13,6 +14,9 @@ export const getStaticPaths = (async () =>
   }))) satisfies GetStaticPaths;
 const { edition } = Astro.props;
 const editions = await loadEditions();
+const previousEdition = edition.previousEditionId
+  ? (editions.find((candidate) => candidate.editionId === edition.previousEditionId) ?? null)
+  : null;
 const recaps = await loadPublishedRecaps(editions);
 const recap = recaps.get(edition.editionId);
 ---
@@ -44,7 +48,10 @@ const recap = recaps.get(edition.editionId);
     <h2 class="eyebrow rankings-heading">POWER RANKING</h2>
     {edition.entries.map((entry) => (
       <RankingCard
-        entry={entry}
+        entry={{
+          ...entry,
+          ...(previousEdition ? rankMovement(previousEdition, entry.teamId, entry.rank) : {}),
+        }}
         awards={edition.badges.filter((award) => award.teamId === entry.teamId)}
         week={edition.week.number}
       />

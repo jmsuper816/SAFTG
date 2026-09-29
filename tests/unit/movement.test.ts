@@ -28,8 +28,8 @@ describe('ranking movement', () => {
     };
     expect(rankMovement(null, '1', 1, draftRanking)).toEqual({ previousRank: 2, movement: 1 });
     expect(rankMovement(previous, '1', 2, draftRanking)).toEqual({
-      previousRank: 2,
-      movement: 0,
+      previousRank: 1,
+      movement: -1,
     });
   });
   it('increments or resets winning streaks', () => {

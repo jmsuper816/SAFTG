@@ -4,10 +4,14 @@ import RankingCard from '../components/RankingCard.astro';
 import WeekNavigation from '../components/WeekNavigation.astro';
 import BadgeSummary from '../components/BadgeSummary.astro';
 import { latestEdition, loadEditions } from '../lib/editions/load';
+import { rankMovement } from '../lib/editions/movement';
 import { loadPublishedRecaps } from '../lib/recaps/load';
 import type { PublishedRecap } from '../lib/recaps/types';
 const editions = await loadEditions();
 const edition = latestEdition(editions);
+const previousEdition = edition?.previousEditionId
+  ? (editions.find((candidate) => candidate.editionId === edition.previousEditionId) ?? null)
+  : null;
 const recaps = editions.length
   ? await loadPublishedRecaps(editions)
   : new Map<string, PublishedRecap>();
@@ -43,7 +47,10 @@ const recap = edition ? recaps.get(edition.editionId) : undefined;
         <h2 class="eyebrow rankings-heading">POWER RANKING</h2>
         {edition.entries.map((entry) => (
           <RankingCard
-            entry={entry}
+            entry={{
+              ...entry,
+              ...(previousEdition ? rankMovement(previousEdition, entry.teamId, entry.rank) : {}),
+            }}
             awards={edition.badges.filter((award) => award.teamId === entry.teamId)}
             week={edition.week.number}
           />
