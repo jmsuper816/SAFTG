@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-03",
+  "cutoff": {
+    "previous": "2026-09-15T16:00:00.000Z",
+    "current": "2026-09-29T16:00:00.000Z"
+  },
+  "leagueFactIds": [
+    "team-6-rank",
+    "team-6-score",
+    "team-10-rank",
+    "team-10-score",
+    "team-10-badge-photo-finish",
+    "team-3-rank",
+    "team-3-score",
+    "team-3-badge-scoreboard-scorcher",
+    "team-3-badge-steamroller",
+    "team-13-rank",
+    "team-13-score",
+    "team-13-badge-giant-slayer",
+    "team-15-rank",
+    "team-15-score",
+    "team-15-badge-hard-luck-hero",
+    "team-14-rank",
+    "team-14-score",
+    "team-14-badge-basement-dweller"
+  ],
+  "lineupEvidence": [],
+  "newsSources": [],
+  "commissionerNoteDigests": []
+}

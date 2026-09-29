@@ -1,0 +1,70 @@
+{
+  "paragraphs": [
+    "Week 3 woke up and chose demolition. Slayday Barbie dropped a league-leading 168.84 points, collecting Winner of the Week and Steamroller honors in one very loud afternoon.",
+    "Shannon’s Serving Punt claimed the No. 1 spot with 139.98 points, while Pitts Out For the Boys settled into No. 2 after surviving the week’s Photo Finish with 117.08.",
+    "Milk These TDs poured up 114.86 points and a Giant Slayer badge on the way to No. 4. Apparently calcium builds strong bones and stronger upsets.",
+    "At the other end of the emotional spectrum, glizzie gambler scored 108.10 and still walked away with Hard-Luck Hero, while Girls Just Wanna Have TDs landed at No. 16 with 56.04 and the Basement Dweller badge.",
+    "Week 4, you have an impossible act to follow. Please bring points, plot twists, and exactly the right amount of chaos."
+  ],
+  "evidenceRefs": [
+    {
+      "paragraphIndex": 0,
+      "factIds": [
+        "team-3-score",
+        "team-3-badge-scoreboard-scorcher",
+        "team-3-badge-steamroller"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 1,
+      "factIds": [
+        "team-6-rank",
+        "team-6-score",
+        "team-10-rank",
+        "team-10-score",
+        "team-10-badge-photo-finish"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 2,
+      "factIds": [
+        "team-13-rank",
+        "team-13-score",
+        "team-13-badge-giant-slayer"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 3,
+      "factIds": [
+        "team-15-rank",
+        "team-15-score",
+        "team-15-badge-hard-luck-hero",
+        "team-14-rank",
+        "team-14-score",
+        "team-14-badge-basement-dweller"
+      ],
+      "sourceIds": []
+    }
+  ],
+  "warnings": [],
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-03",
+  "generation": {
+    "generatedAt": "2026-09-29T16:00:00.000Z",
+    "provider": "openai",
+    "configuredModel": "gpt-5.5",
+    "responseModel": "gpt-5.5",
+    "requestId": "implementation-draft-week-03",
+    "promptVersion": 1,
+    "inputDigest": "d3862155fba4c55a8fc2053386b9da5effec8a4ece098976b53497f11deb26f6"
+  },
+  "approval": {
+    "status": "approved",
+    "commissioner": "Jessica",
+    "approvedAt": "2026-09-29T12:40:13.377Z",
+    "contentDigest": "859372e5b2498d6179bfe1dd491f0fab8ee1abfb43963c1455e2033e3fe1cc90"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "leagueId": "1668863030",
+  "season": 2026,
+  "week": 3,
+  "commissioner": "Jessica",
+  "submittedAt": "2026-09-29T12:33:00.000Z",
+  "rankings": [
+    { "teamId": "6", "rank": 1, "explanation": "Undefeated and holding the top spot." },
+    { "teamId": "10", "rank": 2, "explanation": "Still perfect after three weeks." },
+    { "teamId": "3", "rank": 3, "explanation": "The week's biggest score keeps this team near the top." },
+    { "teamId": "13", "rank": 4, "explanation": "A solid win earns a place in the top four." },
+    { "teamId": "16", "rank": 5, "explanation": "A strong Week 3 win drives a major rise." },
+    { "teamId": "1", "rank": 6, "explanation": "A Week 3 loss sends the team down the board." },
+    { "teamId": "9", "rank": 7, "explanation": "A competitive start keeps this team in the upper half." },
+    { "teamId": "7", "rank": 8, "explanation": "A Week 3 victory moves this team upward." },
+    { "teamId": "5", "rank": 9, "explanation": "Looking to rebound after the latest loss." },
+    { "teamId": "8", "rank": 10, "explanation": "The Week 3 result brings a slide to tenth." },
+    { "teamId": "2", "rank": 11, "explanation": "A first win provides a needed reset." },
+    { "teamId": "11", "rank": 12, "explanation": "A first win stops the early-season skid." },
+    { "teamId": "4", "rank": 13, "explanation": "A difficult matchup keeps this team in the lower tier." },
+    { "teamId": "15", "rank": 14, "explanation": "A close loss leaves this team searching for win number one." },
+    { "teamId": "12", "rank": 15, "explanation": "Another loss drops this team toward the bottom." },
+    { "teamId": "14", "rank": 16, "explanation": "Still searching for the season's first victory." }
+  ]
+}

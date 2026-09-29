@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-03",
+  "league": {
+    "leagueId": "1668863030",
+    "name": "Sundays Are For The Girls",
+    "season": 2026,
+    "timezone": "America/New_York"
+  },
+  "week": {
+    "number": 3,
+    "startsAt": "2026-01-15T00:00:00.000Z",
+    "endsAt": "2026-09-29T12:36:51.274Z",
+    "sourceStatus": "final"
+  },
+  "publishedAt": "2026-09-29T16:00:00.000Z",
+  "rankingSource": {
+    "type": "commissioner",
+    "commissioner": "Jessica",
+    "submissionPath": "data/rankings/2026/week-03.json"
+  },
+  "entries": [
+    {
+      "teamId": "6",
+      "displayName": "Shannon’s Serving Punt",
+      "rank": 1,
+      "previousRank": 8,
+      "movement": 7,
+      "record": {
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "pointsFor": 399.14,
+        "pointsAgainst": 259.06
+      },
+      "weeklyScore": 139.98,
+      "winningStreak": 3,
+      "explanation": "Undefeated and holding the top spot.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "10",
+      "displayName": "Pitts Out For the Boys",
+      "rank": 2,
+      "previousRank": 1,
+      "movement": -1,
+      "record": {
+        "wins": 3,
+        "losses": 0,
+        "ties": 0,
+        "pointsFor": 339.46,
+        "pointsAgainst": 276.86
+      },
+      "weeklyScore": 117.08,
+      "winningStreak": 3,
+      "explanation": "Still perfect after three weeks.",
+      "badgeIds": [
+        "photo-finish"
+      ]
+    },
+    {
+      "teamId": "3",
+      "displayName": "Slayday Barbie",
+      "rank": 3,
+      "previousRank": 3,
+      "movement": 0,
+      "record": {
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 412.22,
+        "pointsAgainst": 251.36
+      },
+      "weeklyScore": 168.84,
+      "winningStreak": 1,
+      "explanation": "The week's biggest score keeps this team near the top.",
+      "badgeIds": [
+        "scoreboard-scorcher",
+        "steamroller"
+      ]
+    },
+    {
+      "teamId": "13",
+      "displayName": "Milk These TDs",
+      "rank": 4,
+      "previousRank": 4,
+      "movement": 0,
+      "record": {
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 350.46,
+        "pointsAgainst": 265.96
+      },
+      "weeklyScore": 114.86,
+      "winningStreak": 1,
+      "explanation": "A solid win earns a place in the top four.",
+      "badgeIds": [
+        "giant-slayer"
+      ]
+    },
+    {
+      "teamId": "16",
+      "displayName": "back that pass up",
+      "rank": 5,
+      "previousRank": 9,
+      "movement": 4,
+      "record": {
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 333.41999999999996,
+        "pointsAgainst": 327.94
+      },
+      "weeklyScore": 139.28,
+      "winningStreak": 1,
+      "explanation": "A strong Week 3 win drives a major rise.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "1",
+      "displayName": "The Waffles Special",
+      "rank": 6,
+      "previousRank": 2,
+      "movement": -4,
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 0,
+        "pointsFor": 343.91999999999996,
+        "pointsAgainst": 357.34
+      },
+      "weeklyScore": 82.14,
+      "winningStreak": 0,
+      "explanation": "A Week 3 loss sends the team down the board.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "9",
+      "displayName": "I Love Kevin’s Tight End",
+      "rank": 7,
+      "previousRank": 12,
+      "movement": 5,
+      "record": {
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 295.5,
+        "pointsAgainst": 299.24
+      },
+      "weeklyScore": 100.12,
+      "winningStreak": 0,
+      "explanation": "A competitive start keeps this team in the upper half.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "7",
+      "displayName": "sacks in the city",
+      "rank": 8,
+      "previousRank": 11,
+      "movement": 3,
+      "record": {
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 326.6,
+        "pointsAgainst": 364.76
+      },
+      "weeklyScore": 117.24,
+      "winningStreak": 1,
+      "explanation": "A Week 3 victory moves this team upward.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "5",
+      "displayName": "Unnecessary Roughness",
+      "rank": 9,
+      "previousRank": 7,
+      "movement": -2,
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 0,
+        "pointsFor": 316.2,
+        "pointsAgainst": 383.56
+      },
+      "weeklyScore": 99.14,
+      "winningStreak": 0,
+      "explanation": "Looking to rebound after the latest loss.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "8",
+      "displayName": "Whisk Takers",
+      "rank": 10,
+      "previousRank": 15,
+      "movement": 5,
+      "record": {
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "pointsFor": 319.14,
+        "pointsAgainst": 259.78
+      },
+      "weeklyScore": 69.36,
+      "winningStreak": 0,
+      "explanation": "The Week 3 result brings a slide to tenth.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "2",
+      "displayName": "The Brotherly Shovers",
+      "rank": 11,
+      "previousRank": 6,
+      "movement": -5,
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 0,
+        "pointsFor": 338.79999999999995,
+        "pointsAgainst": 348.65999999999997
+      },
+      "weeklyScore": 132.84,
+      "winningStreak": 1,
+      "explanation": "A first win provides a needed reset.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "11",
+      "displayName": "Sammy's Ball Handlers",
+      "rank": 12,
+      "previousRank": 5,
+      "movement": -7,
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 0,
+        "pointsFor": 318.46,
+        "pointsAgainst": 352.34000000000003
+      },
+      "weeklyScore": 89.02,
+      "winningStreak": 1,
+      "explanation": "A first win stops the early-season skid.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "4",
+      "displayName": "McConkey-Tonk Badonkadonk",
+      "rank": 13,
+      "previousRank": 13,
+      "movement": 0,
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 0,
+        "pointsFor": 285.59999999999997,
+        "pointsAgainst": 371.06
+      },
+      "weeklyScore": 78.58,
+      "winningStreak": 0,
+      "explanation": "A difficult matchup keeps this team in the lower tier.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "15",
+      "displayName": "glizzie gambler",
+      "rank": 14,
+      "previousRank": 10,
+      "movement": -4,
+      "record": {
+        "wins": 0,
+        "losses": 3,
+        "ties": 0,
+        "pointsFor": 303.74,
+        "pointsAgainst": 357.96
+      },
+      "weeklyScore": 108.1,
+      "winningStreak": 0,
+      "explanation": "A close loss leaves this team searching for win number one.",
+      "badgeIds": [
+        "hard-luck-hero"
+      ]
+    },
+    {
+      "teamId": "12",
+      "displayName": "Hail Marys",
+      "rank": 15,
+      "previousRank": 14,
+      "movement": -1,
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 0,
+        "pointsFor": 296.68,
+        "pointsAgainst": 333.76
+      },
+      "weeklyScore": 106.86,
+      "winningStreak": 0,
+      "explanation": "Another loss drops this team toward the bottom.",
+      "badgeIds": []
+    },
+    {
+      "teamId": "14",
+      "displayName": "Girls Just Wanna Have TDs",
+      "rank": 16,
+      "previousRank": 16,
+      "movement": 0,
+      "record": {
+        "wins": 0,
+        "losses": 3,
+        "ties": 0,
+        "pointsFor": 206.73999999999998,
+        "pointsAgainst": 376.43999999999994
+      },
+      "weeklyScore": 56.04,
+      "winningStreak": 0,
+      "explanation": "Still searching for the season's first victory.",
+      "badgeIds": [
+        "basement-dweller"
+      ]
+    }
+  ],
+  "badges": [
+    {
+      "badgeId": "scoreboard-scorcher",
+      "teamId": "3",
+      "reason": "Led the league with 168.84 points.",
+      "metric": 168.84
+    },
+    {
+      "badgeId": "basement-dweller",
+      "teamId": "14",
+      "reason": "Posted the week's low score of 56.04.",
+      "metric": 56.04
+    },
+    {
+      "badgeId": "steamroller",
+      "teamId": "3",
+      "reason": "Won by 90.26 points.",
+      "metric": 90.26
+    },
+    {
+      "badgeId": "photo-finish",
+      "teamId": "10",
+      "reason": "Survived a 8.98-point finish.",
+      "metric": 8.980000000000004
+    },
+    {
+      "badgeId": "giant-slayer",
+      "teamId": "13",
+      "reason": "Beat a team ranked 2 places higher.",
+      "metric": 2
+    },
+    {
+      "badgeId": "hard-luck-hero",
+      "teamId": "15",
+      "reason": "Scored 108.10 points and still lost.",
+      "metric": 108.1
+    }
+  ],
+  "previousEditionId": "1668863030-2026-week-02"
+}
