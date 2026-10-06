@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "leagueId": "1668863030",
+  "season": 2026,
+  "week": 4,
+  "commissioner": "Jessica",
+  "submittedAt": "2026-10-06T12:33:00.000Z",
+  "rankings": [
+    { "teamId": "6", "rank": 1, "explanation": "Undefeated and holding the top spot." },
+    { "teamId": "10", "rank": 2, "explanation": "Still perfect after four weeks." },
+    { "teamId": "3", "rank": 3, "explanation": "Another big score keeps this team in the top three." },
+    { "teamId": "13", "rank": 4, "explanation": "A third win secures another week in the top four." },
+    { "teamId": "11", "rank": 5, "explanation": "A second straight win sparks a major climb." },
+    { "teamId": "16", "rank": 6, "explanation": "Holding a place in the upper half despite the loss." },
+    { "teamId": "7", "rank": 7, "explanation": "A strong score keeps this team competitive." },
+    { "teamId": "8", "rank": 8, "explanation": "The rankings reward a solid start to the season." },
+    { "teamId": "9", "rank": 9, "explanation": "Looking to rebound after the Week 4 loss." },
+    { "teamId": "1", "rank": 10, "explanation": "A third loss sends this team down the board." },
+    { "teamId": "5", "rank": 11, "explanation": "A difficult Week 4 result brings another slide." },
+    { "teamId": "2", "rank": 12, "explanation": "Searching for a reset after three straight losses." },
+    { "teamId": "12", "rank": 13, "explanation": "A dominant victory moves this team upward." },
+    { "teamId": "15", "rank": 14, "explanation": "The first win of the season provides a lift." },
+    { "teamId": "4", "rank": 15, "explanation": "The week's lowest score drops this team near the bottom." },
+    { "teamId": "14", "rank": 16, "explanation": "A first victory offers hope despite the unchanged ranking." }
+  ]
+}

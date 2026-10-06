@@ -135,14 +135,16 @@ export const editionSchema = z
       )
       .min(2)
       .max(20),
-    badges: z.array(
-      z.object({
-        badgeId,
-        teamId: z.string().min(1),
-        reason: z.string().trim().min(1).max(300),
-        metric: finite.nullable(),
-      }),
-    ),
+    badges: z
+      .array(
+        z.object({
+          badgeId,
+          teamId: z.string().min(1),
+          reason: z.string().trim().min(1).max(300),
+          metric: finite.nullable(),
+        }),
+      )
+      .max(6, 'Weekly editions are capped at six badge awards'),
     previousEditionId: z.string().nullable(),
   })
   .superRefine((edition, context) => {

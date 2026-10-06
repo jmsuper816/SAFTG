@@ -116,4 +116,27 @@ describe('edition contract', () => {
         week: { ...validEdition.week, sourceStatus: 'pending' },
       }),
     ).toThrow());
+  it('rejects more than six weekly badge awards', () => {
+    const badgeIds = [
+      'scoreboard-scorcher',
+      'basement-dweller',
+      'steamroller',
+      'photo-finish',
+      'giant-slayer',
+      'hard-luck-hero',
+      'main-character-energy',
+    ];
+    expect(() =>
+      editionSchema.parse({
+        ...validEdition,
+        entries: [{ ...validEdition.entries[0], badgeIds }, validEdition.entries[1]],
+        badges: badgeIds.map((badgeId) => ({
+          badgeId,
+          teamId: '1',
+          reason: 'Weekly honor.',
+          metric: 1,
+        })),
+      }),
+    ).toThrow(/capped at six/);
+  });
 });

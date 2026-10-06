@@ -1,0 +1,68 @@
+{
+  "paragraphs": [
+    "Week 4 came with undefeated drama at the top. Pitts Out For the Boys led the league with 151.82 points, while Shannon’s Serving Punt answered with 147.98. Both moved to 4–0, both remain tied for the longest winning streak, and both will display a very deserved 🔥 4.",
+    "Sammy’s Ball Handlers decided subtlety was overrated, winning again and launching seven places up the rankings to No. 5. That kind of entrance earns our new Main Character Energy badge.",
+    "Girls Just Wanna Have TDs finally crashed the win column, taking down The Waffles Special 96.80–87.98 while ranked at the bottom. Remaining No. 16 after pulling off the week’s Plot Twist feels rude, but at least the badge department came prepared.",
+    "Hail Marys delivered the week’s Steamroller win, while Unnecessary Roughness collected Basement Dweller with 65.68. Meanwhile, sacks in the city scored 131.00 and still lost, which is precisely the kind of nonsense the Hard-Luck Hero badge was built for.",
+    "Week 5, good luck following that. The undefeated teams are still undefeated, the bottom team has discovered winning, and the middle of the rankings is now a full-contact traffic jam."
+  ],
+  "evidenceRefs": [
+    {
+      "paragraphIndex": 0,
+      "factIds": [
+        "team-10-score",
+        "team-10-badge-scoreboard-scorcher",
+        "team-6-score"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 1,
+      "factIds": [
+        "team-11-rank",
+        "team-11-score",
+        "team-11-badge-main-character-energy"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 2,
+      "factIds": [
+        "team-14-rank",
+        "team-14-score",
+        "team-14-badge-plot-twist"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 3,
+      "factIds": [
+        "team-12-score",
+        "team-12-badge-steamroller",
+        "team-5-score",
+        "team-5-badge-basement-dweller",
+        "team-7-score",
+        "team-7-badge-hard-luck-hero"
+      ],
+      "sourceIds": []
+    }
+  ],
+  "warnings": [],
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-04",
+  "generation": {
+    "generatedAt": "2026-10-06T16:00:00.000Z",
+    "provider": "openai",
+    "configuredModel": "gpt-5.5",
+    "responseModel": "gpt-5.5",
+    "requestId": "implementation-draft-week-04",
+    "promptVersion": 1,
+    "inputDigest": "862425d71b265d64e9f8c543e7f633d0e352a4996a3a5268f70cdee599f99872"
+  },
+  "approval": {
+    "status": "approved",
+    "commissioner": "Jessica",
+    "approvedAt": "2026-10-06T12:47:56.139Z",
+    "contentDigest": "3dcb6f27f1197655b951278c8ad541291738ba60fe0a9ef0a35092fe44a1d511"
+  }
+}

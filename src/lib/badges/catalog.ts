@@ -64,6 +64,24 @@ export const badgeCatalog: BadgeDefinition[] = [
     tieRule: 'all',
     assetPath: 'assets/badges/hard-luck-hero.svg',
   },
+  {
+    badgeId: 'main-character-energy',
+    name: 'Main Character Energy',
+    description: 'Biggest rankings rise paired with a weekly win.',
+    scope: 'weekly',
+    exclusive: true,
+    tieRule: 'none',
+    assetPath: 'assets/badges/main-character-energy.svg',
+  },
+  {
+    badgeId: 'plot-twist',
+    name: 'Plot Twist',
+    description: 'A first win delivered by an unexpected upset.',
+    scope: 'weekly',
+    exclusive: true,
+    tieRule: 'none',
+    assetPath: 'assets/badges/plot-twist.svg',
+  },
 ];
 
 export const badgeById = new Map(badgeCatalog.map((badge) => [badge.badgeId, badge]));
