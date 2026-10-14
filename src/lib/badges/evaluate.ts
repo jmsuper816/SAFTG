@@ -1,5 +1,7 @@
 import type { BadgeAward, Matchup, RankingEntry } from '../domain/types.ts';
 
+export const MAX_WEEKLY_BADGE_AWARDS = 6;
+
 const tiedExtrema = (
   values: Array<{ teamId: string; value: number }>,
   direction: 'max' | 'min',
@@ -90,5 +92,5 @@ export function evaluateBadges(entries: RankingEntry[], matchups: Matchup[]): Ba
       reason: `Scored ${item.value.toFixed(2)} points and still lost.`,
       metric: item.value,
     });
-  return awards;
+  return awards.slice(0, MAX_WEEKLY_BADGE_AWARDS);
 }

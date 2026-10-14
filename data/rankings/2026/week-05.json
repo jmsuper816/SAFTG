@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "leagueId": "1668863030",
+  "season": 2026,
+  "week": 5,
+  "commissioner": "Jessica",
+  "submittedAt": "2026-10-13T21:35:00.000Z",
+  "rankings": [
+    { "teamId": "6", "rank": 1, "explanation": "Still undefeated and holding the top spot." },
+    { "teamId": "10", "rank": 2, "explanation": "A league-leading score keeps this undefeated team at number two." },
+    { "teamId": "3", "rank": 3, "explanation": "A fourth win keeps this team firmly in the top three." },
+    { "teamId": "13", "rank": 4, "explanation": "Three straight wins secure another week in the top four." },
+    { "teamId": "11", "rank": 5, "explanation": "A third consecutive win preserves the number-five ranking." },
+    { "teamId": "16", "rank": 6, "explanation": "A Week 5 victory holds this team in the upper tier." },
+    { "teamId": "9", "rank": 7, "explanation": "A strong losing score still earns a two-place rise." },
+    { "teamId": "7", "rank": 8, "explanation": "A difficult loss results in a one-place slide." },
+    { "teamId": "1", "rank": 9, "explanation": "The rankings offer a small rise despite the loss." },
+    { "teamId": "15", "rank": 10, "explanation": "A competitive Week 5 performance drives a four-place climb." },
+    { "teamId": "2", "rank": 11, "explanation": "A high-scoring loss still brings a slight rise." },
+    { "teamId": "5", "rank": 12, "explanation": "The week's lowest score produces another drop." },
+    { "teamId": "14", "rank": 13, "explanation": "A second straight win lifts this team three places." },
+    { "teamId": "8", "rank": 14, "explanation": "A narrow loss sends this team down the board." },
+    { "teamId": "4", "rank": 15, "explanation": "A convincing win keeps this team ahead of the basement." },
+    { "teamId": "12", "rank": 16, "explanation": "A Week 5 loss lands this team at the bottom of the rankings." }
+  ]
+}

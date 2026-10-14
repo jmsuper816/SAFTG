@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { evaluateBadges } from '../../src/lib/badges/evaluate';
+import { evaluateBadges, MAX_WEEKLY_BADGE_AWARDS } from '../../src/lib/badges/evaluate';
 import type { Matchup, RankingEntry } from '../../src/lib/domain/types';
 
 const entries: RankingEntry[] = [
@@ -41,19 +41,17 @@ const matchups: Matchup[] = [
 ];
 
 describe('badges', () => {
-  it('awards all seven qualifying badge types deterministically', () => {
+  it('caps qualifying badge awards deterministically', () => {
     const ids = evaluateBadges(entries, matchups).map((award) => award.badgeId);
-    expect(ids).toEqual(
-      expect.arrayContaining([
-        'scoreboard-scorcher',
-        'basement-dweller',
-        'steamroller',
-        'photo-finish',
-        'giant-slayer',
-        'hot-streak',
-        'hard-luck-hero',
-      ]),
-    );
+    expect(ids).toHaveLength(MAX_WEEKLY_BADGE_AWARDS);
+    expect(ids).toEqual([
+      'scoreboard-scorcher',
+      'basement-dweller',
+      'steamroller',
+      'photo-finish',
+      'giant-slayer',
+      'hot-streak',
+    ]);
   });
   it('awards tied extrema to all teams', () => {
     const tied = entries.map((entry) => ({ ...entry, weeklyScore: 100, winningStreak: 2 }));

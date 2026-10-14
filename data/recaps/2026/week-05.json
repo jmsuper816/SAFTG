@@ -1,0 +1,57 @@
+{
+  "paragraphs": [
+    "Week 5 belonged to Pitts Out For the Boys, who dropped 181.36 points and won by 61.86. Winner of the Week and Steamroller are both heading to Pitts, because sharing the spotlight was apparently never an option.",
+    "Milk These TDs scored 145.60 and earned the inaugural Three-Peat Treat with a third straight win. Girls Just Wanna Have TDs survived Whisk Takers by 1.76, climbed three spots, and claimed Cardiac Queen honors.",
+    "The Brotherly Shovers scored 126.22 and still lost, earning Hard-Luck Hero, while Unnecessary Roughness posted 61.40 and moved into the Basement Dweller suite. Week 6, please consider being normal."
+  ],
+  "evidenceRefs": [
+    {
+      "paragraphIndex": 0,
+      "factIds": [
+        "team-10-score",
+        "team-10-badge-scoreboard-scorcher",
+        "team-10-badge-steamroller"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 1,
+      "factIds": [
+        "team-13-score",
+        "team-13-badge-three-peat-treat",
+        "team-14-rank",
+        "team-14-score",
+        "team-14-badge-cardiac-queen"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 2,
+      "factIds": [
+        "team-2-score",
+        "team-2-badge-hard-luck-hero",
+        "team-5-score",
+        "team-5-badge-basement-dweller"
+      ],
+      "sourceIds": []
+    }
+  ],
+  "warnings": [],
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-05",
+  "generation": {
+    "generatedAt": "2026-10-13T22:00:00.000Z",
+    "provider": "openai",
+    "configuredModel": "gpt-5.5",
+    "responseModel": "gpt-5.5",
+    "requestId": "implementation-draft-week-05",
+    "promptVersion": 1,
+    "inputDigest": "342d3a2f6b2e16218565e4502cd787b0555afd144db4364b4d77bb63b0c9a072"
+  },
+  "approval": {
+    "status": "approved",
+    "commissioner": "Jessica",
+    "approvedAt": "2026-10-13T22:35:50.022Z",
+    "contentDigest": "538715d02ba907780f410ed7f47eb321f11e94bdcb5b01c4987d82e356a6bb84"
+  }
+}

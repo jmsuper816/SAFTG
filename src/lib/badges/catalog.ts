@@ -82,6 +82,24 @@ export const badgeCatalog: BadgeDefinition[] = [
     tieRule: 'none',
     assetPath: 'assets/badges/plot-twist.svg',
   },
+  {
+    badgeId: 'cardiac-queen',
+    name: 'Cardiac Queen',
+    description: 'A victory secured in the week’s closest finish.',
+    scope: 'weekly',
+    exclusive: true,
+    tieRule: 'none',
+    assetPath: 'assets/badges/cardiac-queen.svg',
+  },
+  {
+    badgeId: 'three-peat-treat',
+    name: 'Three-Peat Treat',
+    description: 'Highest score among teams earning a third consecutive win.',
+    scope: 'streak',
+    exclusive: true,
+    tieRule: 'none',
+    assetPath: 'assets/badges/three-peat-treat.svg',
+  },
 ];
 
 export const badgeById = new Map(badgeCatalog.map((badge) => [badge.badgeId, badge]));
