@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-10",
+  "cutoff": { "previous": "2026-11-10T17:00:00.000Z", "current": "2026-11-17T15:00:00.000Z" },
+  "leagueFactIds": ["team-10-rank", "team-10-score", "team-6-rank", "team-6-score", "team-6-badge-scoreboard-scorcher", "team-13-rank", "team-13-score", "team-8-rank", "team-8-badge-photo-finish", "team-8-badge-hot-streak", "team-1-rank", "team-1-badge-giant-slayer", "team-2-badge-steamroller", "team-9-score", "team-9-badge-basement-dweller"],
+  "lineupEvidence": [], "newsSources": [], "commissionerNoteDigests": []
+}

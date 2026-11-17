@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "leagueId": "1668863030",
+  "season": 2026,
+  "week": 10,
+  "commissioner": "Jessica",
+  "submittedAt": "2026-11-17T15:00:00.000Z",
+  "rankings": [
+    { "teamId": "10", "rank": 1, "explanation": "The perfect season ends, but a 9-1 record still owns the top spot." },
+    { "teamId": "6", "rank": 2, "explanation": "A league-leading 163.38 points provide an emphatic return to form." },
+    { "teamId": "13", "rank": 3, "explanation": "A 158.08-point win over the last unbeaten team keeps this contender surging." },
+    { "teamId": "16", "rank": 4, "explanation": "Four consecutive wins and a 7-3 record earn another climb." },
+    { "teamId": "8", "rank": 5, "explanation": "Five straight wins, even by 1.22 points, complete a rise into the top five." },
+    { "teamId": "3", "rank": 6, "explanation": "A 76.62-point loss sends last week's breakout back down the board." },
+    { "teamId": "11", "rank": 7, "explanation": "A 123.62-point win stops the slide and steadies this team at 6-4." },
+    { "teamId": "7", "rank": 8, "explanation": "Three straight wins keep this team planted in the upper half." },
+    { "teamId": "15", "rank": 9, "explanation": "The winning streak ends against the week's top scorer." },
+    { "teamId": "1", "rank": 10, "explanation": "Back-to-back wins and a 106.36-point upset earn a two-place rise." },
+    { "teamId": "14", "rank": 11, "explanation": "A third straight loss moves this team out of the top ten." },
+    { "teamId": "2", "rank": 12, "explanation": "A 113.72-point win sparks the week's biggest rise." },
+    { "teamId": "12", "rank": 13, "explanation": "A 1.22-point loss extends the skid to two." },
+    { "teamId": "4", "rank": 14, "explanation": "Four straight losses leave this team at 3-7." },
+    { "teamId": "9", "rank": 15, "explanation": "A 42-point week keeps this team one step above the basement." },
+    { "teamId": "5", "rank": 16, "explanation": "Another low-scoring loss returns this team to last place." }
+  ]
+}

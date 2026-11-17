@@ -1,0 +1,60 @@
+{
+  "paragraphs": [
+    "The perfect season is over. Milk These TDs dropped 158.08 on Pitts Out For the Boys, though Pitts stayed number one and Milk climbed to third. Chaos finally found the address.",
+    "Shannon's Serving Punt led everyone with 163.38 and reclaimed second. Whisk Takers won by 1.22, reached the top five, and somehow fit Photo Finish and Hot Streak into the same carry-on.",
+    "The Waffles Special jumped two places with Giant Slayer, while The Brotherly Shovers earned Steamroller. I Love Kevin's Tight End scored 42.00 and closed the catch-up edition with Basement Dweller."
+  ],
+  "evidenceRefs": [
+    {
+      "paragraphIndex": 0,
+      "factIds": [
+        "team-10-rank",
+        "team-10-score",
+        "team-13-rank",
+        "team-13-score"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 1,
+      "factIds": [
+        "team-6-rank",
+        "team-6-score",
+        "team-6-badge-scoreboard-scorcher",
+        "team-8-rank",
+        "team-8-badge-photo-finish",
+        "team-8-badge-hot-streak"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 2,
+      "factIds": [
+        "team-1-rank",
+        "team-1-badge-giant-slayer",
+        "team-2-badge-steamroller",
+        "team-9-score",
+        "team-9-badge-basement-dweller"
+      ],
+      "sourceIds": []
+    }
+  ],
+  "warnings": [],
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-10",
+  "generation": {
+    "generatedAt": "2026-11-17T15:00:00.000Z",
+    "provider": "openai",
+    "configuredModel": "gpt-5.5",
+    "responseModel": "gpt-5.5",
+    "requestId": "backfill-week-10",
+    "promptVersion": 1,
+    "inputDigest": "136f1bfaa338c0542c99a367093d0f7e46f58c447eab46d48ac84b5598300da8"
+  },
+  "approval": {
+    "status": "approved",
+    "commissioner": "Jessica",
+    "approvedAt": "2026-11-17T16:19:50.734Z",
+    "contentDigest": "b6be734f22a74e248fa22c9c1d1f7bfcb831557da7ba9819b9313df9256da901"
+  }
+}

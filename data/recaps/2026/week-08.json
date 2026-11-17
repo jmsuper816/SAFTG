@@ -1,0 +1,57 @@
+{
+  "paragraphs": [
+    "Pitts Out For the Boys made it 8-0 with 141.36, sweeping Winner of the Week and Hot Streak. Modesty remains the only category they have not won.",
+    "Whisk Takers scored 128.46 and steamrolled the week's biggest margin. sacks in the city won by 0.04, which is less a cushion and more a rounding error with a trophy.",
+    "Hail Marys paired 126.24 with Giant Slayer, while I Love Kevin's Tight End landed at 49.00 and took Basement Dweller. Week 8 contained multitudes."
+  ],
+  "evidenceRefs": [
+    {
+      "paragraphIndex": 0,
+      "factIds": [
+        "team-10-rank",
+        "team-10-score",
+        "team-10-badge-scoreboard-scorcher",
+        "team-10-badge-hot-streak"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 1,
+      "factIds": [
+        "team-8-score",
+        "team-8-badge-steamroller",
+        "team-7-score",
+        "team-7-badge-photo-finish"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 2,
+      "factIds": [
+        "team-12-score",
+        "team-12-badge-giant-slayer",
+        "team-9-score",
+        "team-9-badge-basement-dweller"
+      ],
+      "sourceIds": []
+    }
+  ],
+  "warnings": [],
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-08",
+  "generation": {
+    "generatedAt": "2026-11-03T17:00:00.000Z",
+    "provider": "openai",
+    "configuredModel": "gpt-5.5",
+    "responseModel": "gpt-5.5",
+    "requestId": "backfill-week-08",
+    "promptVersion": 1,
+    "inputDigest": "13df27a029da52a53810400634220706252631cf61e1e8e172675d87c0f32eb1"
+  },
+  "approval": {
+    "status": "approved",
+    "commissioner": "Jessica",
+    "approvedAt": "2026-11-17T16:19:50.453Z",
+    "contentDigest": "936643ba5d3688f9357567418517f0c64780de829f695a5db344c1cbaf161655"
+  }
+}

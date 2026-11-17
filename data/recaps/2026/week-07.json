@@ -1,0 +1,56 @@
+{
+  "paragraphs": [
+    "Pitts Out For the Boys reached 7-0 and kept the top ranking plus Hot Streak. At this point the weekly suspense is less 'will they win?' and more 'who volunteers as tribute?'",
+    "Sammy's Ball Handlers scored a league-best 123.24 and climbed to fourth. sacks in the city supplied the week's demolition and rode Steamroller four spots upward.",
+    "Girls Just Wanna Have TDs survived the close one for Photo Finish, while McConkey-Tonk Badonkadonk claimed Giant Slayer. Unnecessary Roughness remained loyal to Basement Dweller."
+  ],
+  "evidenceRefs": [
+    {
+      "paragraphIndex": 0,
+      "factIds": [
+        "team-10-rank",
+        "team-10-score",
+        "team-10-badge-hot-streak"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 1,
+      "factIds": [
+        "team-11-rank",
+        "team-11-score",
+        "team-11-badge-scoreboard-scorcher",
+        "team-7-rank",
+        "team-7-badge-steamroller"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 2,
+      "factIds": [
+        "team-14-badge-photo-finish",
+        "team-4-badge-giant-slayer",
+        "team-5-badge-basement-dweller"
+      ],
+      "sourceIds": []
+    }
+  ],
+  "warnings": [],
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-07",
+  "generation": {
+    "generatedAt": "2026-10-27T16:00:00.000Z",
+    "provider": "openai",
+    "configuredModel": "gpt-5.5",
+    "responseModel": "gpt-5.5",
+    "requestId": "backfill-week-07",
+    "promptVersion": 1,
+    "inputDigest": "41b50b1b8ebcda11d8ef609d704f8b45035e2a44ebb95b342e3fcf3dbb4c944b"
+  },
+  "approval": {
+    "status": "approved",
+    "commissioner": "Jessica",
+    "approvedAt": "2026-11-17T16:19:50.314Z",
+    "contentDigest": "d683341d6d2b5fcde1b628869d973f9c662c89b2d12dfeff117b26165374abb0"
+  }
+}

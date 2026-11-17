@@ -9,6 +9,32 @@ import { evaluateBadges } from '../badges/evaluate.ts';
 import { assertCompleteRanking } from './load-ranking.ts';
 import { rankMovement, winningStreak } from './movement.ts';
 
+function recordForWeek(
+  previous: WeeklyEdition | null,
+  teamId: string,
+  snapshotRecord: EspnWeekSnapshot['teams'][number]['record'],
+  matchups: EspnWeekSnapshot['matchups'],
+  snapshotWeek: number,
+) {
+  const previousEntry = previous?.entries.find((entry) => entry.teamId === teamId);
+  const matchup = matchups.find((item) => item.homeTeamId === teamId || item.awayTeamId === teamId);
+  if (!previous || !previousEntry || !matchup || previous.week.number + 1 !== snapshotWeek)
+    return snapshotRecord;
+
+  const isHome = matchup.homeTeamId === teamId;
+  const score = isHome ? matchup.homeScore : matchup.awayScore;
+  const opponentScore = isHome ? matchup.awayScore : matchup.homeScore;
+  if (score === null || opponentScore === null) return snapshotRecord;
+
+  return {
+    wins: previousEntry.record.wins + (score > opponentScore ? 1 : 0),
+    losses: previousEntry.record.losses + (score < opponentScore ? 1 : 0),
+    ties: previousEntry.record.ties + (score === opponentScore ? 1 : 0),
+    pointsFor: previousEntry.record.pointsFor + score,
+    pointsAgainst: previousEntry.record.pointsAgainst + opponentScore,
+  };
+}
+
 export interface NormalizeOptions {
   timezone: string;
   submissionPath: string;
@@ -54,14 +80,21 @@ export function normalizeEdition(
   }
   const entries = ranking.rankings.map((item) => {
     const team = teamById.get(item.teamId)!;
+    const record = recordForWeek(
+      options.previous,
+      team.teamId,
+      team.record,
+      snapshot.matchups,
+      snapshot.status.week,
+    );
     return {
       teamId: team.teamId,
       displayName: team.displayName,
       rank: item.rank,
       ...rankMovement(options.previous, team.teamId, item.rank, options.draftRanking),
-      record: team.record,
+      record,
       weeklyScore: scoreById.get(team.teamId) ?? 0,
-      winningStreak: winningStreak(options.previous, team.teamId, team.record.wins),
+      winningStreak: winningStreak(options.previous, team.teamId, record.wins),
       explanation: item.explanation,
       badgeIds: [] as string[],
     };

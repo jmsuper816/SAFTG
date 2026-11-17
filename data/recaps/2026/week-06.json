@@ -1,0 +1,56 @@
+{
+  "paragraphs": [
+    "Pitts Out For the Boys took over number one, reached 6-0, and collected Hot Streak honors. The crown changed heads, but perfection remained annoyingly intact.",
+    "Milk These TDs led the league with 136.22, while Whisk Takers vaulted seven places and earned Giant Slayer for handing the former number one its first loss.",
+    "glizzie gambler rolled to 125.06 and Steamroller. Unnecessary Roughness answered with 21.00 and Basement Dweller, a two-team demonstration of the full fantasy-football emotional spectrum."
+  ],
+  "evidenceRefs": [
+    {
+      "paragraphIndex": 0,
+      "factIds": [
+        "team-10-rank",
+        "team-10-score",
+        "team-10-badge-hot-streak"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 1,
+      "factIds": [
+        "team-13-score",
+        "team-13-badge-scoreboard-scorcher",
+        "team-8-rank",
+        "team-8-badge-giant-slayer"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 2,
+      "factIds": [
+        "team-15-score",
+        "team-15-badge-steamroller",
+        "team-5-score",
+        "team-5-badge-basement-dweller"
+      ],
+      "sourceIds": []
+    }
+  ],
+  "warnings": [],
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-06",
+  "generation": {
+    "generatedAt": "2026-10-20T16:00:00.000Z",
+    "provider": "openai",
+    "configuredModel": "gpt-5.5",
+    "responseModel": "gpt-5.5",
+    "requestId": "backfill-week-06",
+    "promptVersion": 1,
+    "inputDigest": "27b2f5c2e394a151cacea63d73a3fb398a1b99a93c91103ad4a1014ed4a2de38"
+  },
+  "approval": {
+    "status": "approved",
+    "commissioner": "Jessica",
+    "approvedAt": "2026-11-17T16:19:50.163Z",
+    "contentDigest": "dad405220f516c49e33b280b6bc95d881fc6198fd3964d61e55098f46a01efc6"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "leagueId": "1668863030",
+  "season": 2026,
+  "week": 6,
+  "commissioner": "Jessica",
+  "submittedAt": "2026-10-20T16:00:00.000Z",
+  "rankings": [
+    { "teamId": "10", "rank": 1, "explanation": "A 6-0 start and another win make the top spot unavoidable." },
+    { "teamId": "6", "rank": 2, "explanation": "The first loss costs the crown, but a 5-1 record keeps this team elite." },
+    { "teamId": "13", "rank": 3, "explanation": "A 136.22-point win extends the streak and earns a top-three place." },
+    { "teamId": "3", "rank": 4, "explanation": "A narrow loss cannot erase one of the league's strongest scoring totals." },
+    { "teamId": "11", "rank": 5, "explanation": "A fourth straight win keeps the climb going." },
+    { "teamId": "16", "rank": 6, "explanation": "A comfortable victory and a 4-2 record hold this team in the upper tier." },
+    { "teamId": "8", "rank": 7, "explanation": "Beating the last unbeaten team launches a seven-place rise." },
+    { "teamId": "14", "rank": 8, "explanation": "Three consecutive wins have turned an early stumble into real momentum." },
+    { "teamId": "15", "rank": 9, "explanation": "A 125.06-point rout earns the week's biggest move up the board." },
+    { "teamId": "12", "rank": 10, "explanation": "A loss drops this team to 2-4 despite a competitive score." },
+    { "teamId": "1", "rank": 11, "explanation": "A second win steadies the season and stops the slide." },
+    { "teamId": "9", "rank": 12, "explanation": "The week's loss and a 2-4 record force a move down." },
+    { "teamId": "7", "rank": 13, "explanation": "A 53.12-point week sends this team tumbling." },
+    { "teamId": "4", "rank": 14, "explanation": "The record falls to 2-4 after another loss." },
+    { "teamId": "2", "rank": 15, "explanation": "A fifth loss outweighs a strong season-long scoring total." },
+    { "teamId": "5", "rank": 16, "explanation": "A 21-point week leaves this team in the basement." }
+  ]
+}

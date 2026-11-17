@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "leagueId": "1668863030",
+  "season": 2026,
+  "week": 8,
+  "commissioner": "Jessica",
+  "submittedAt": "2026-11-03T17:00:00.000Z",
+  "rankings": [
+    { "teamId": "10", "rank": 1, "explanation": "An eighth straight win and 141.36 points make this an easy number one." },
+    { "teamId": "6", "rank": 2, "explanation": "A second loss narrows the margin, but the season body of work holds up." },
+    { "teamId": "13", "rank": 3, "explanation": "The winning streak ends at five, though a 6-2 record remains top-tier." },
+    { "teamId": "3", "rank": 4, "explanation": "A 111.08-point win ends the skid and keeps this team among the leaders." },
+    { "teamId": "11", "rank": 5, "explanation": "A 0.04-point heartbreak ends the streak but not the top-five standing." },
+    { "teamId": "16", "rank": 6, "explanation": "A decisive win moves this team to 5-3." },
+    { "teamId": "8", "rank": 7, "explanation": "Three straight wins and 128.46 points keep the rise alive." },
+    { "teamId": "7", "rank": 8, "explanation": "The narrowest win imaginable lifts this team back to .500." },
+    { "teamId": "14", "rank": 9, "explanation": "The four-game streak ends, costing one place in a crowded middle tier." },
+    { "teamId": "15", "rank": 10, "explanation": "A 124.78-point upset earns a return to the top ten." },
+    { "teamId": "12", "rank": 11, "explanation": "A 126.24-point win breaks the losing streak in style." },
+    { "teamId": "4", "rank": 12, "explanation": "A low-scoring loss pushes this team back down the board." },
+    { "teamId": "2", "rank": 13, "explanation": "A 112.28-point win offers a badly needed reset." },
+    { "teamId": "1", "rank": 14, "explanation": "A third straight loss drops the record to 2-6." },
+    { "teamId": "9", "rank": 15, "explanation": "A 49-point week brings a steep fall." },
+    { "teamId": "5", "rank": 16, "explanation": "Seven consecutive losses leave no route out of last place." }
+  ]
+}

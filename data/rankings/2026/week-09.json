@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "leagueId": "1668863030",
+  "season": 2026,
+  "week": 9,
+  "commissioner": "Jessica",
+  "submittedAt": "2026-11-10T17:00:00.000Z",
+  "rankings": [
+    { "teamId": "10", "rank": 1, "explanation": "Nine weeks, nine wins, and another 150-point performance." },
+    { "teamId": "3", "rank": 2, "explanation": "A league-best 190.66 points demand a jump into second." },
+    { "teamId": "6", "rank": 3, "explanation": "A 120.08-point loss to the week's juggernaut causes only a small slide." },
+    { "teamId": "13", "rank": 4, "explanation": "A one-point loss drops this team to 6-3 in a packed contender tier." },
+    { "teamId": "16", "rank": 5, "explanation": "A third straight win keeps this team moving upward." },
+    { "teamId": "8", "rank": 6, "explanation": "Four consecutive wins have turned this team into a contender." },
+    { "teamId": "11", "rank": 7, "explanation": "Back-to-back losses force a move out of the top five." },
+    { "teamId": "7", "rank": 8, "explanation": "A 0.60-point escape produces a second straight win." },
+    { "teamId": "15", "rank": 9, "explanation": "Two straight wins and another triple-digit score continue the climb." },
+    { "teamId": "14", "rank": 10, "explanation": "A second straight loss cools the midseason surge." },
+    { "teamId": "12", "rank": 11, "explanation": "A loss returns this team to the lower half." },
+    { "teamId": "1", "rank": 12, "explanation": "A win ends the three-game skid and moves the record to 3-6." },
+    { "teamId": "4", "rank": 13, "explanation": "A loss to the former basement team triggers another fall." },
+    { "teamId": "2", "rank": 14, "explanation": "The week's lowest score erases the momentum from Week 8." },
+    { "teamId": "9", "rank": 15, "explanation": "A seventh loss keeps this team near the bottom." },
+    { "teamId": "5", "rank": 16, "explanation": "A win ends the seven-game skid, but the season profile still ranks last." }
+  ]
+}

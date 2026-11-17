@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "leagueId": "1668863030",
+  "season": 2026,
+  "week": 7,
+  "commissioner": "Jessica",
+  "submittedAt": "2026-10-27T16:00:00.000Z",
+  "rankings": [
+    { "teamId": "10", "rank": 1, "explanation": "Seven wins in seven weeks keep the league's only perfect team on top." },
+    { "teamId": "6", "rank": 2, "explanation": "A 117-point rebound restores momentum at 6-1." },
+    { "teamId": "13", "rank": 3, "explanation": "Five straight wins and a 6-1 record keep the pressure on the leaders." },
+    { "teamId": "11", "rank": 4, "explanation": "The league's longest active winning streak earns another move upward." },
+    { "teamId": "3", "rank": 5, "explanation": "Back-to-back losses create the first real wobble of the season." },
+    { "teamId": "16", "rank": 6, "explanation": "A loss to the league leader leaves this team steady at 4-3." },
+    { "teamId": "8", "rank": 7, "explanation": "A second consecutive win moves this team above .500." },
+    { "teamId": "14", "rank": 8, "explanation": "Four straight wins complete a remarkable early-season recovery." },
+    { "teamId": "7", "rank": 9, "explanation": "A 108.88-point win sparks a four-place rebound." },
+    { "teamId": "4", "rank": 10, "explanation": "A victory pulls the record to 3-4 and earns a sizable jump." },
+    { "teamId": "15", "rank": 11, "explanation": "A strong score was not enough to avoid a fifth loss." },
+    { "teamId": "1", "rank": 12, "explanation": "A close defeat keeps this team stuck at two wins." },
+    { "teamId": "12", "rank": 13, "explanation": "The losing streak reaches three after another narrow result." },
+    { "teamId": "9", "rank": 14, "explanation": "A fifth loss and modest score lead to another slide." },
+    { "teamId": "2", "rank": 15, "explanation": "The scoring remains respectable, but six losses keep this team near the bottom." },
+    { "teamId": "5", "rank": 16, "explanation": "A sixth straight loss keeps the basement occupied." }
+  ]
+}

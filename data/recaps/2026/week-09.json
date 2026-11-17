@@ -1,0 +1,57 @@
+{
+  "paragraphs": [
+    "Pitts Out For the Boys reached 9-0 with 151.38 and another Hot Streak badge. The undefeated tour continued, apparently without an off switch.",
+    "Slayday Barbie detonated for 190.66, climbed to second, and collected both Winner of the Week and Steamroller. One lineup, two badges, zero subtlety.",
+    "sacks in the city escaped with Photo Finish and Giant Slayer in the same matchup. The Brotherly Shovers scored 49.88 and inherited Basement Dweller just in time for Week 10."
+  ],
+  "evidenceRefs": [
+    {
+      "paragraphIndex": 0,
+      "factIds": [
+        "team-10-rank",
+        "team-10-score",
+        "team-10-badge-hot-streak"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 1,
+      "factIds": [
+        "team-3-rank",
+        "team-3-score",
+        "team-3-badge-scoreboard-scorcher",
+        "team-3-badge-steamroller"
+      ],
+      "sourceIds": []
+    },
+    {
+      "paragraphIndex": 2,
+      "factIds": [
+        "team-7-score",
+        "team-7-badge-photo-finish",
+        "team-7-badge-giant-slayer",
+        "team-2-score",
+        "team-2-badge-basement-dweller"
+      ],
+      "sourceIds": []
+    }
+  ],
+  "warnings": [],
+  "schemaVersion": 1,
+  "editionId": "1668863030-2026-week-09",
+  "generation": {
+    "generatedAt": "2026-11-10T17:00:00.000Z",
+    "provider": "openai",
+    "configuredModel": "gpt-5.5",
+    "responseModel": "gpt-5.5",
+    "requestId": "backfill-week-09",
+    "promptVersion": 1,
+    "inputDigest": "bf6c3e4041d13a4accb0b99bfa9df695782bc3526907d1053117f9df8acdab4e"
+  },
+  "approval": {
+    "status": "approved",
+    "commissioner": "Jessica",
+    "approvedAt": "2026-11-17T16:19:50.592Z",
+    "contentDigest": "e533e83d81fd2df5c07065637f07e717014c18fcaa4383df452e2843f53a42eb"
+  }
+}
