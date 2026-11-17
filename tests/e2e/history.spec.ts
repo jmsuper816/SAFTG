@@ -57,5 +57,5 @@ test('navigates edition-isolated historical badge summaries', async ({ page }) =
     6,
   );
   await page.getByRole('link', { name: 'Current', exact: true }).click();
-  await expect(page.getByText('Week 2 · Current')).toBeVisible();
+  await expect(page.getByText('Week 10 · Current')).toBeVisible();
 });

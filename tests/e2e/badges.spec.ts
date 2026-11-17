@@ -11,8 +11,8 @@ test('summarizes current awards and reveals reasons with native disclosure', asy
   await expect(section).toHaveCSS('background-color', 'rgb(5, 45, 55)');
   await expect(section.locator('details')).toHaveCount(6);
   await expect(section.locator('summary').first()).toContainText('Winner of the Week');
-  await expect(section.locator('summary').first()).toContainText('Week 2');
-  await expect(section.locator('summary').first()).toContainText('The Waffles Special');
+  await expect(section.locator('summary').first()).toContainText('Week 10');
+  await expect(section.locator('summary').first()).toContainText('Shannon’s Serving Punt');
   await expect(section.locator('.badge-summary-description').first()).toBeHidden();
 
   const first = section.locator('details').first();
@@ -29,7 +29,7 @@ test('summarizes current awards and reveals reasons with native disclosure', asy
   await first.locator('summary').press('Space');
   await expect(first).not.toHaveAttribute('open', '');
 
-  await expect(page.getByLabel(/Winner of the Week, earned week 2/)).toBeVisible();
+  await expect(page.getByLabel(/Winner of the Week, earned week 10/)).toBeVisible();
   expect(requests).toEqual([]);
 });
 
